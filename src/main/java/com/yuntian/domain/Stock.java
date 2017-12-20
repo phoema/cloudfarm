@@ -45,7 +45,7 @@ public class Stock implements Serializable {
 
 	@Column(nullable = false)
 	private String name;
-	@Column(nullable = false)
+	@Column
 	private String type;
 
 	@ManyToOne  

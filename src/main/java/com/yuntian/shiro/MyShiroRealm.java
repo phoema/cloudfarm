@@ -1,7 +1,5 @@
 package com.yuntian.shiro;
 
-import java.util.List;
-
 import javax.annotation.Resource;
 
 import org.apache.shiro.authc.AuthenticationException;

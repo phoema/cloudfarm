@@ -34,7 +34,7 @@ public class ArticleRepositoryTest {
 		article.setType(2);
 		article.setAuthor("phoema");
 		article.setTitle("人人都有一片田");
-		article.setBrowsenumber(22);
+		article.setBrowser(22);
 		article.setDetail("所以，面对今天这样一个传统行业数字化，跨界整合全民创业的大潮，我们所做的就是要用“互联网+”的思维，整合一个“集约化生态循环农业”基础上的订单式大农业体系，并依托云端大数据、O2O电商、微商社交等，来满足我们的用户，拥有“自主农庄，获得收益”的愿望，构建出一个巨大的跨产业、跨领域的复合商业航母，实现“人人都有一片田”的梦想！我们称它为：cloudfarm");
 		articleRepository.save(article);
 	}

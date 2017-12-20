@@ -32,14 +32,14 @@ public class FarmRepositoryTest {
 		Farm farm = new Farm();
 		farm.setName("我的农田");
 		farm.setState(FarmState.GROW);
-		farm.setUser_id(Long.valueOf(1));
-		farm.setPkage_id(Long.valueOf(1));
+		farm.setUserid(Long.valueOf(1));
+		farm.setPkageid(Long.valueOf(1));
 		farmRepository.save(farm);
 	}
 
 	@Test
 	public void  myfarms() {
-		List<Farm> list = (List<Farm>) farmRepository.findByuser_uid(Long.valueOf(1));
+		List<Farm> list = (List<Farm>) farmRepository.findByuser_uidOrderByCreatetimeDesc(Long.valueOf(1));
 
 		System.out.println("info:"+ list);
 		assert(true);

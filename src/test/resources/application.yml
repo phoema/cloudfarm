@@ -5,7 +5,7 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://jiahhpc:3306/testshiro
     username: root
-    password: root
+    password: jsmart+1
     max-active: 800
   jpa:
     hibernate:

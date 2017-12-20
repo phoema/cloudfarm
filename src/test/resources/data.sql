@@ -21,8 +21,8 @@ INSERT INTO `sys_role_permission` VALUES ('1', '2');
 -- ----------------------------
 -- Records of pkage
 -- ----------------------------
-INSERT INTO `pkage` (id,name,price,cycleday) VALUES ('1', '套餐1', '0',30);
-INSERT INTO `pkage` (id,name,price,cycleday) VALUES ('2', '套餐2', '1',50);
+INSERT INTO `pkage` (id,name,price,cycleday,score) VALUES ('1', '套餐1', '0',30,20);
+INSERT INTO `pkage` (id,name,price,cycleday,score) VALUES ('2', '套餐2', '1',50,20);
 -- ----------------------------
 -- Records of product
 -- ----------------------------
@@ -48,10 +48,9 @@ INSERT INTO `score` (id,name,score,userid,createtime) VALUES ('6', '签到', '1'
 -- ----------------------------
 -- Records of stock
 -- ----------------------------
-INSERT INTO `stock` (id,name,stock,userid,createtime) VALUES ('1', '仓库1', '20', '1', null);
-INSERT INTO `stock` (id,name,stock,userid,createtime) VALUES ('2', '仓库2', '40', '1', null);
-INSERT INTO `stock` (id,name,stock,userid,createtime) VALUES ('3', '辣椒1号', '20', '1', '2016-08-03 17:14:30');
-INSERT INTO `stock` (id,name,stock,userid,createtime) VALUES ('4', '辣椒1号', '20', '1', '2016-08-03 17:15:53');
+INSERT INTO `stock` (productid,name,stock,userid,createtime) VALUES ('1', '仓库1', '20', '1', null);
+INSERT INTO `stock` (productid,name,stock,userid,createtime) VALUES ('2', '仓库2', '40', '1', null);
+INSERT INTO `stock` (productid,name,stock,userid,createtime) VALUES ('3', '辣椒1号', '20', '1', '2016-08-03 17:14:30');
 -- ----------------------------
 -- Records of stock
 -- ----------------------------

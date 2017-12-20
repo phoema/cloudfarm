@@ -63,35 +63,7 @@ public class ShiroConfiguration {
 		filterChainDefinitionMap.put("/api/article/list", "anon");
 		filterChainDefinitionMap.put("/api/user/save", "anon");
 		filterChainDefinitionMap.put("/api/pkage/list", "anon");
-		// 认证访问
-		filterChainDefinitionMap.put("/api/farmaction/get", "myFormFilter");
-		filterChainDefinitionMap.put("/api/farmaction/save", "myFormFilter");
-		filterChainDefinitionMap.put("/api/farmaction/action", "myFormFilter");
-		filterChainDefinitionMap.put("/api/farmaction/get", "myFormFilter");
-		filterChainDefinitionMap.put("/api/farmaction/list", "myFormFilter");
-		filterChainDefinitionMap.put("/api/farmaction/getbyuserid", "myFormFilter");
-		filterChainDefinitionMap.put("/api/farmaction/expect", "myFormFilter");
-		filterChainDefinitionMap.put("/api/farmaction/stockfromfarm", "myFormFilter");
 
-		filterChainDefinitionMap.put("/api/address/save", "myFormFilter");
-		filterChainDefinitionMap.put("/api/address/mydelete", "myFormFilter");
-		filterChainDefinitionMap.put("/api/address/getbyuserid", "myFormFilter");
-		filterChainDefinitionMap.put("/api/address/list", "roles[admin]");
-		
-		filterChainDefinitionMap.put("/api/pkage/get", "myFormFilter");
-		filterChainDefinitionMap.put("/api/product/list", "anon");
-		filterChainDefinitionMap.put("/api/product/get", "myFormFilter");
-		
-		filterChainDefinitionMap.put("/api/score/get", "myFormFilter");
-		filterChainDefinitionMap.put("/api/score/save", "myFormFilter");
-		filterChainDefinitionMap.put("/api/score/sign", "myFormFilter");
-		filterChainDefinitionMap.put("/api/score/list", "myFormFilter");
-		filterChainDefinitionMap.put("/api/stock/get", "myFormFilter");
-		filterChainDefinitionMap.put("/api/stock/savelist", "myFormFilter");
-		filterChainDefinitionMap.put("/api/stock/save", "myFormFilter");
-		filterChainDefinitionMap.put("/api/stock/list", "myFormFilter");
-		filterChainDefinitionMap.put("/api/stock/getbyuserid", "myFormFilter");
-		filterChainDefinitionMap.put("/api/stock/getsgroup", "myFormFilter");
 		filterChainDefinitionMap.put("/api/user/curuser", "myFormFilter");
 		filterChainDefinitionMap.put("/api/user/updatemyemail", "myFormFilter");
 		filterChainDefinitionMap.put("/api/user/updatemyname", "myFormFilter");
@@ -99,24 +71,14 @@ public class ShiroConfiguration {
 		
 		// admin访问
 		filterChainDefinitionMap.put("/api/article/save", "roles[admin]");
-		filterChainDefinitionMap.put("/api/farmaction/list", "roles[admin]");
-		filterChainDefinitionMap.put("/api/farm/list", "roles[admin]");
-		filterChainDefinitionMap.put("/api/farm/save", "roles[admin]");
-		filterChainDefinitionMap.put("/api/notice/get", "roles[admin]");
-		filterChainDefinitionMap.put("/api/notice/delete", "roles[admin]");
-		filterChainDefinitionMap.put("/api/notice/save", "roles[admin]");
-		filterChainDefinitionMap.put("/api/notice/getbystatus", "roles[admin]");
-		filterChainDefinitionMap.put("/api/notice/list", "roles[admin]");
-		filterChainDefinitionMap.put("/api/pkage/save", "roles[admin]");
-		filterChainDefinitionMap.put("/api/product/delete", "roles[admin]");
-		filterChainDefinitionMap.put("/api/product/save", "roles[admin]");
-		filterChainDefinitionMap.put("/api/producturl/saveurl", "roles[admin]");
+		filterChainDefinitionMap.put("/api/article/delete", "roles[admin]");
 		filterChainDefinitionMap.put("/api/user/get", "roles[admin]");
 		filterChainDefinitionMap.put("/api/user/delete", "roles[admin]");
 		filterChainDefinitionMap.put("/api/user/list", "roles[admin]");
 		filterChainDefinitionMap.put("/api/user/update", "roles[admin]");
 		filterChainDefinitionMap.put("/api/user/deletes", "roles[admin]");
-		
+		filterChainDefinitionMap.put("/manage/login.html", "anon");
+		filterChainDefinitionMap.put("/manage/**.html", "roles[admin]");
 		
 		//<!-- 过滤链定义，从上向下顺序执行，一般将 /**放在最为下边 -->:这是一个坑呢，一不小心代码就不好使了;
 	    //<!-- authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问-->
@@ -127,7 +89,7 @@ public class ShiroConfiguration {
 //		filterChainDefinitionMap.put("/api/login", "anon");
 //		filterChainDefinitionMap.put("/api/**", "authc");
 		//filterChainDefinitionMap.put("/api/**", "myRestAuthc");
-		filterChainDefinitionMap.put("/**", "anon");
+//		filterChainDefinitionMap.put("/**", "anon");
 		// 如果不设置默认会自动寻找Web工程根目录下的"/login.jsp"页面
         shiroFilterFactoryBean.setLoginUrl("/index.html");
         // 登录成功后要跳转的链接

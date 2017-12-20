@@ -4,6 +4,8 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.json.JSONException;
+
 import com.baidu.ueditor.define.ActionMap;
 import com.baidu.ueditor.define.AppInfo;
 import com.baidu.ueditor.define.BaseState;
@@ -33,7 +35,7 @@ public class ActionEnter {
 		
 	}
 	
-	public String exec () {
+	public String exec () throws JSONException {
 		
 		String callbackName = this.request.getParameter("callback");
 		
@@ -51,7 +53,7 @@ public class ActionEnter {
 
 	}
 	
-	public String invoke() {
+	public String invoke() throws JSONException {
 		
 		if ( actionType == null || !ActionMap.mapping.containsKey( actionType ) ) {
 			return new BaseState( false, AppInfo.INVALID_ACTION ).toJSONString();
