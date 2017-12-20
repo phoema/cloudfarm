@@ -1,0 +1,1712 @@
+body {
+	font-size: 12px;
+}
+.topTable td {
+	width: 5%;
+}
+.selectArrowNormal {
+	width:30px;
+	height:35px;
+	background: url(../../img/patent/table/arrowDownWhite.png) no-repeat center;
+	margin-right: 10px;
+}
+.selectArrowSelect {
+	width:30px;
+	height:35px;
+	background: url(../../img/patent/table/arrowUpWhite.png) no-repeat center;
+	margin-right: 10px;
+}
+.searOverviewLeftStyle1 {
+	background-color: #8098BC;
+	cursor: pointer;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+margintopext {
+	margin-top:-1px;
+}
+.searOverviewLeftContentS1 div:hover {
+	color: rgb(52,152,219);
+	background-color: rgb(239,245,248);
+}
+.searOverviewLeftContentSpan1 {
+	margin-left: 9%; width:auto; max-width:160px; margin-right:3px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
+.searOverviewLeftContentS1 span {
+	display:inline-block; float:left;
+}
+.colExpandMore {
+	color: rgb(8,125,204);
+}
+.moreImgStyle {
+	margin-left: 35%;
+	margin-top: 12px;
+}
+.imgTextNormal {
+	background: url(../../img/patent/searOverview/btn1_1.png);
+}
+.rightBtnImgText {
+	width: 49px;
+	height: 25px;
+	margin-right: 1px;
+}
+.tableNormal {
+	background: url(../../img/patent/searOverview/btn2_1.png);
+}
+.tableSelect {
+	background: url(../../img/patent/searOverview/btn2_2.png);
+}
+.surfaceNormal {
+	background: url(../../img/patent/searOverview/btn3_1.png);
+}
+.surfaceSelect {
+	background: url(../../img/patent/searOverview/btn3_2.png);
+}
+.overViewNormal {
+	background: url(../../img/patent/searOverview/btn4_1.png);
+}
+.overViewSelect1 {
+	background: url(../../img/patent/searOverview/btn4_2.png);
+}
+.leftTopSelect {
+	color: rgb(52,152,219);
+	background-color: rgb(239,245,248);
+	cursor: default;
+}
+.tablePageTable {
+	border-collapse: collapse;
+}
+.tablePageTable th {
+	height: 40px;
+	border: 1px solid rgb(233,235,235);
+	background-color: rgb(246,248,248);
+	color: rgb(153,153,153);
+}
+.addWarning {
+	background-image: url(../../img/patent/searOverview/ic1.png);
+	background-repeat: no-repeat;
+	background-position: 8px 5px;
+	width: 80px;
+	text-align: right;
+	padding-right: 15px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.addWarning:hover {
+	border: 1px solid #1484e6;
+}
+.homeBRUl li {
+	cursor: pointer;
+}
+.tableListSetBg {
+	background: url(../../img/patent/searOverview/bg.png);
+}
+.patentStrengthSel1 {
+	background: url(../../img/patent/searOverview/btn7_1.png)
+}
+.patentStrengthSel2 {
+	background: url(../../img/patent/searOverview/btn8_1.png);
+}
+.addSortSe1 {
+	background: url(../../img/patent/searOverview/btn7_4.png);
+}
+.addSortSe2 {
+	background: url(../../img/patent/searOverview/btn8_1.png);
+}
+.surfaceImgTip {
+	width:86px;
+	height:35px;
+	top:30px;
+	left:-25px;
+	background: url(../../img/patent/searOverview/kuang1_1.png)
+}
+.combineKinBg {
+	background: url(../../img/patent/searOverview/combineKinBg.png) no-repeat;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	/*-moz-border-image: url(../../img/patent/searOverview/combineKinBg.png) 0;*/
+    background-repeat:no-repeat\9;
+	background-image:none\9;
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/patent/searOverview/combineKinBg.png',  sizingMethod='scale')\9;
+}
+.combineKinBgBig {
+	background: url(../../img/patent/searOverview/combineKinBgBig.png);
+}
+.combineKinDiv {
+	z-index: 22;
+	top: -15px;
+	left: -3px;
+}
+.combineKinTopDiv {
+	background-image: url(../../img/patent/table/arrowBlueuP.png);
+	background-repeat: no-repeat;
+	background-position: 68px center;
+	height: 28px;
+	line-height: 28px;
+}
+.combineGrayDiv {
+	width: 150px;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 6px;
+	background-image: url(../../img/public/arrowBlackDown.png);
+	background-repeat: no-repeat;
+	background-position: 130px center;
+}
+.combineKinHelpNormal {
+	background: url(../../img/patent/searOverview/ic1CombineKin_1.png);
+}
+.combineKinHelpSelect {
+	background: url(../../img/patent/searOverview/ic1CombineKin_2.png);
+}
+.bgGray {
+	background-color: rgb(227,227,227);
+}
+.bgWhite {
+	background-color: rgb(255,255,255);
+}
+.combineKinBgRight {
+	background: url(../../img/patent/searOverview/combineBgRight.png) no-repeat;
+	background-size: 100% 100%;
+}
+.combineKinBgRightBig {
+	background-image: url(../../img/patent/searOverview/combineRightBgBig.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	/*-moz-border-image: url(../../img/patent/searOverview/combineRightBgBig.png) 0;*/
+    background-repeat:no-repeat\9;
+	background-image:none\9;
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/patent/searOverview/combineRightBgBig.png',  sizingMethod='scale')\9;
+}
+.combineKinLeftLineStyle {
+	width: 6px;
+	height: 143px;
+	margin: 4px 0 0 5px;
+	background: url(../../img/patent/searOverview/combineLine.png);
+}
+.combineRightStyle {
+	width: 320px;
+	height: 189px;
+	left:173px;
+	top: -9px;/*margin-top: -9px;*/
+    /*left:172px\9;*/
+    /*top: -12px\9;*/
+}
+.combineRightTitleStyle {
+	width:280px;
+	height: 25px;
+	margin: 0 auto;
+	line-height: 25px;
+	text-align: center;
+	font-weight: bold;
+}
+.combineRightContentStyle {
+	width: 290px;
+	height: 125px;
+	margin-left: 15px;
+	line-height: 20px;
+	padding-left: 6px;
+}
+.bgAddProjectNew {
+	background: url(../../img/patent/searOverview/addProject_new.png);
+	background-size: 100% 35px;
+}
+.bgAddProjectAppend {
+	background: url(../../img/patent/searOverview/addProject_append.png);
+	background-size: 100% 35px;
+}
+.bgGray245 {
+	background-color: rgb(245,245,245);
+}
+.radiobuttonUnselected {
+	background: url("../../img/patent/peruseView/ic1_1.png");
+	width: 15px;
+	height: 15px;
+}
+.radiobuttonSelected {
+	background: url("../../img/patent/peruseView/ic1_3.png");
+	width: 15px;
+	height: 15px;
+}
+.combineBtnStyle {
+	width:78px;
+	height: 25px;
+	line-height: 25px;
+	margin-right: 6px;
+	margin-top: 10px;
+	float:left;
+	border: none;
+}
+.surfaceImg {
+	width: 130px;
+	height: 130px;
+	border: 2px solid #d3d3d3;
+}
+.surfaceImg:hover {
+	border: 2px solid rgb(0,106,208);
+}
+.colTime {
+	color: rgb(154,154,154);
+}
+.ulDivStyle {
+	width:106px;
+	margin-left:-1px;
+	z-index: 2
+}
+#showNumSelect_ul {
+	border-bottom:0px;
+	border-top: 1px solid #D3D3D3;
+}
+#showNumSelect_ul li {
+	padding-bottom: 5px;
+}
+#showNumSelect {
+	background-image: url(../../img/patent/table/arrowBlueuP.png);
+}
+.arrowTop {
+	background: url(../../img/patent/searOverview/arrowTop.png) no-repeat scroll center center transparent;
+}
+.arrowBottom {
+	background: url(../../img/patent/searOverview/arrowbottom.png) no-repeat scroll center center transparent;
+}
+.bgCircelGreen {
+	background: url(../../img/patent/searOverview/bgCircelGree.png) no-repeat center;
+}
+.bgCircelWhite {
+	background: url(../../img/patent/searOverview/bgCircelWhite.png) no-repeat center;
+}
+.bgRectangeWhite {
+	background-image: url(../../img/patent/searOverview/bgRecWhite.png);
+	background-size: 100% 100%;
+	line-height: 30px;
+}
+.bgRectangeGreen {
+	background-image: url(../../img/patent/searOverview/bgRecGreen.png);
+	background-size: 100% 100%;
+	line-height: 30px
+}
+.bgRectangeBlue {
+	background-image: url(../../img/patent/searOverview/bgRecBlue.png);
+	background-size: 100% 100%;
+	line-height: 30px
+}
+.bgRectangeRed {
+	background-image: url(../../img/patent/searOverview/bgRecRed.png);
+	background-size: 100% 100%;
+	line-height: 30px;
+}
+.bgToolNormal {
+	background: url(../../img/patent/searOverview/toolNormal.png) no-repeat center;
+}
+.bgToolSelect {
+	background: url(../../img/patent/searOverview/toolSelect.png) no-repeat center;
+}
+.bgFeedBack {
+	background: url(../../img/patent/searOverview/icFeedBack.png) no-repeat center;
+}
+.bgFeedBackSelect {
+	background: url(../../img/patent/searOverview/icFeedBackSelect.png) no-repeat center;
+}
+.bgRectangeLightGreen {
+	background-image: url(../../img/patent/searOverview/bgRecLightGreen.png);
+	background-size: 100% 100%;
+	line-height: 30px;
+}
+.bgRectangeOrange {
+	background-image: url(../../img/patent/searOverview/bgRecOrange.png);
+	background-size: 100% 100%;
+	line-height: 30px;
+}
+.bgCircelOrange {
+	background: url(../../img/patent/searOverview/bgCircelOrange.png) no-repeat center
+}
+.bgTaskNormal {
+	background: url(../../img/patent/searOverview/bgTaskNormal.png) no-repeat center
+}
+.bgTaskSelect {
+	background: url(../../img/patent/searOverview/bgTaskSelect.png) no-repeat center
+}
+.bgAlreadySelect {
+	background:  url(../../img/patent/searOverview/bgAlreadySelect.png);
+	background-size: 100% 100%;
+}
+.alreadySelectTop {
+	margin-left: 10px;
+	margin-top: 7px;
+	height: 30px;
+}
+.alreadySelectTop div {
+	float: left;
+	text-align: center;
+	width:8.2em;
+	height: 30px;
+	line-height: 30px;
+}
+.alreadySelectTop .itemNormal {
+	background-color: rgb(232,232,232);
+	border-left: 1px solid #d3d3d3;
+}
+.alreadySelectTop .itemSelect {
+	background-color: rgb(255,255,255);
+}
+.feedBackTextarea {
+	width:615px;
+	height: 145px;
+	padding: 10px 0 0 10px
+}
+.feedBackTextDivStyle {
+	width:325px;
+	height:25px
+}
+.feedBackDelete {
+	width: 20px;
+	height: 25px;
+	cursor: pointer;
+	background: url(../../img/patent/searOverview/feedBackDelete.png) no-repeat top right;
+}
+.feedBackSubmit {
+	float: right;
+	color: #ffffff;
+	width: 90px;
+	height: 32px;
+	margin-right: 23px;
+	margin-top: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.lineButton {
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #d3d3d3;
+	background-color: #F5F6F6;
+}
+.selectDownloadBorderBottom {
+	border-bottom: 1px solid rgb(207,207,207)
+}
+.triangleDown {
+	/*background: url("../../img/patent/table/arrowBlueDown.png") no-repeat center;*/
+    width: 24px;
+	height: 12px;
+	background: url("../../img/patent/table/arrowDown.png") no-repeat center;
+}
+.triangleUp {
+	/*background: url("../../img/patent/table/arrowBlueuP.png") no-repeat center;*/
+    width: 24px;
+	height: 12px;
+	background: url("../../img/patent/table/arrowUp.png") no-repeat center;
+}
+.triangleRight {
+	width: 24px;
+	height: 12px;
+	background: url("../../img/patent/table/arrowRight.png") no-repeat center;
+}
+.downloadTip input {
+	width: 60px;
+	height: 20px;
+	/*background: none;*/
+    border: 1px solid #d3d3d3;
+	border-radius: 2px;
+	background-color: rgb(243,243,243);
+}
+.downloadSecondTitle {
+	font-size: 14px;
+	font-weight: bold;
+}
+div.radiobuttonUnselected {
+	margin:0px;
+	padding:0px;
+	min-height:0px;
+}
+div.radiobuttonSelected {
+	margin:0px;
+	padding:0px;
+	min-height:0px;
+}
+.selectDownload, .selectDownloadBorderBottom {
+	line-height: normal;
+}
+.checkBoxBg {
+	background: url(../../img/patent/patent_searchPage/check1_1.png) no-repeat;
+}
+.checkBoxClickBg {
+	background: url(../../img/patent/patent_searchPage/check1_3.png) no-repeat;
+}
+.missionListSelect {
+	margin-top: 20px;
+	border:1px solid #e5e5e5;
+	margin-left: 10px;
+	margin-right: 10px;
+	/*text-align: center;*/
+    width: 990px;
+	border-collapse: collapse;
+}
+.missionListSelect td, th, thead {
+	border:1px solid #e5e5e5;
+	padding:5px;
+}
+.missionListSelect thead {
+	color: #000000;
+	font-size: 14px;
+	/*background-color: #ebebeb;*/
+    background-color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+}
+.missionListSelect th {
+	text-align: center;
+	font-weight: normal;
+}
+.missionListSelect tbody td, th {
+	height: 30px;
+	line-height: 30px;
+	/*background-color: #f3f3f3;*/
+    background-color: #ffffff;
+	color: #8e8d8d;
+}
+.missionListDelete {
+	color: #ffffff;
+	width: 82px;
+	height: 31px;
+	margin-left: 20px;
+	margin-top: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.missionListDeleteIcon {
+	width: 20px;
+	height: 20px;
+	background: url("../../img/patent/searOverview/delete_x.png");
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.missionListDownLoadEnable {
+	width: 20px;
+	height: 20px;
+	background: url("../../img/patent/searOverview/download_2.png");
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.missionListDownLoadUnenable {
+	width: 20px;
+	height: 20px;
+	background: url("../../img/patent/searOverview/download_1.png");
+	float: left;
+	margin-left: 10px;
+}
+.missionListLookUPEnable {
+	width: 20px;
+	height: 20px;
+	background: url("../../img/patent/searOverview/lookUP.png");
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.missionListLookUPUnenable {
+	width: 20px;
+	height: 20px;
+	background: url("../../img/patent/searOverview/lookUP_1.png");
+	float: left;
+	margin-left: 10px;
+}
+.missionListHitEnable {
+	width: 20px;
+	height: 20px;
+	background: url("../../img/patent/searOverview/ic1_3.png");
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.missionListHitUnEnable {
+	width: 20px;
+	height: 20px;
+	background: url("../../img/patent/searOverview/ic1_5.png");
+	float: left;
+	margin-left: 10px;
+}
+.numberHitWind {
+	width: 820px;
+	height: 420px;
+	background-color: #ffffff;
+	margin: 0px auto;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	/*-moz-border-radius:2px;
+    -webkit-border-radius:2px;*/
+    box-shadow:0 0 10px 10px darkgrey;
+}
+.missionListSelectAll {
+	width: 16px;
+	height: 16px;
+}
+.missListTrSel {
+	background-color: #ebebeb !important;
+}
+.missionList {
+	width: 1050px;
+	height: 480px;
+	left: -1045px;
+	top: -220px;
+	/*background: url(../../img/patent/searOverview/missionListBg.png) no-repeat 62px 0;*/
+    background: url(../../img/patent/searOverview/missionListBg.png);
+	background-size: 100% 100%;
+	border: 1px solid #E3E3E3;
+	/*background-color: rgb(238, 238, 238);*/
+    /*background-color: #ffffff;*/
+    margin: 0px auto;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-right: none;
+	border-bottom: none;
+}
+.typeSelect {
+	width: 120px;
+	height: 32px;
+	line-height: 30px;
+	color: rgb(59,149,242);
+	background-color: rgb(255,255,255);
+	border-top: 1px solid #2490d8;
+	border-left: 1px solid #2490d8;
+	font-size: 16px;
+}
+.contrastNormal {
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	background-color: rgb(252,251,251);
+	border: 1px solid #d3d3d3;
+}
+.score0 {
+	width: 100%;
+	height: 100%;
+	background: url("../../img/patent/searOverview/0.png") no-repeat 5px;
+	padding-left: 35px;
+}
+.score1_99 {
+	width: 100%;
+	height: 100%;
+	background: url("../../img/patent/searOverview/1-99.png") no-repeat 5px;
+	padding-left: 35px;
+}
+.score20 {
+	width: 100%;
+	height: 100%;
+	background: url("../../img/patent/searOverview/1-99.png") no-repeat 5px;
+	padding-left: 35px;
+}
+.score100 {
+	width: 100%;
+	height: 100%;
+	background: url("../../img/patent/searOverview/100.png") no-repeat 6px;
+	padding-left: 36px;
+}
+.bgDel {
+	width: 17px;
+	height: 25px;
+	background: url(../../img/patent/peruseView/delete.png) no-repeat center;
+}
+.bgDel:hover {
+	width: 17px;
+	height: 25px;
+	background: url(../../img/patent/peruseView/ic8_3.png) no-repeat center;
+}
+.bgDoubleArrow {
+	background: url(../../img/patent/searOverview/ic_doubleArrow.png) no-repeat center;
+}
+.bgCollection {
+	background: url(../../img/patent/searOverview/ic1_2.png) no-repeat center;
+}
+.bgDownload {
+	background: url(../../img/patent/searOverview/download.png) no-repeat center;
+}
+#selectedDocDownload2 {
+	background: url(../../img/patent/searOverview/download2.png) no-repeat center;
+}
+.bgWarning {
+	background: url(../../img/patent/searOverview/ic5_2.png) no-repeat center;
+}
+.bgAlreadySelectBottom {
+	background-color: rgb(247,250,250);
+	border: 1px solid #d3d3d3;
+	border-radius: 2px;
+	width: 23px;
+	height: 23px;
+}
+.bgTool {
+	background:  url(../../img/patent/searOverview/bgTool.png);
+	background-size: 100% 100%;
+}
+.checkBoxStyle1 {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin-left: 10px;
+}
+.tablePatentRecord td {
+	border:0px solid #FFFFFF;
+	padding:6px;
+}
+#__patentdetail .IPCQLink a {
+	float: left;
+	margin-right:10px;
+}
+.rightTopContent span {
+	background-color: #E3E3E3;
+	padding: 15px 10px 16px 10px;
+}
+.rightContentTip {
+	height:30px;
+	line-height:29px;
+	margin-left: 10px;
+	display: inline-block;
+	background-color: #658AD1;
+	border-radius: 2px;
+	padding-left:10px;
+	color: #D1EFFF; position:relative;
+	font-family: "Microsoft Yahei";
+	margin-top:5px;
+}
+.rightContentTipNum {
+	text-align:center;
+	color: #FFF;
+	font-weight: bolder;
+	padding: 0px 5px;
+	font-size: 16px; display:none;
+}
+.rightContentTipNum a{ color:#fff;}
+.statusPatent {
+	height: 20px;
+	line-height: 20px;
+	color: #FFF;
+	text-align: center;
+	border-radius: 2px;
+	margin-left: 2px;
+	padding: 0 3px 0 3px;
+}
+div#theme {
+	background-color: #FFFFFF;
+}
+#mGrid_patentGrid .modelGridPaginatorContainer {
+	float: left;
+	width:550px; display:none;
+}
+#patentPageText {
+	width:35px;
+	height:25px;
+}
+/* 代码集页面样式**/
+.typeSelect {
+	width: 120px;
+	height: 32px;
+	line-height: 30px;
+	color: rgb(59,149,242);
+	background-color: rgb(255,255,255);
+	border-top: 1px solid #d3d3d3;
+	border-left: 1px solid #d3d3d3;
+}
+.typeNormal {
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	background-color: rgb(252,251,251);
+	border: 1px solid #d3d3d3;
+}
+.contrastNormal {
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	background-color: rgb(252,251,251);
+	border: 1px solid #d3d3d3;
+}
+.contrastSelect {
+	width: 120px;
+	height: 31px;
+	line-height: 30px;
+	color: rgb(59,149,242);
+	background-color: rgb(255,255,255);
+	border-top: 1px solid #d3d3d3;
+	border-right: 1px solid #d3d3d3;
+}
+.selectWordTitle {
+	font-weight: bold;
+	font-size: 13px;
+}
+.checkBoxStyle {
+	display: block;
+	height: 16px;
+	width: 16px;
+	/*margin-left: 10px;*/
+}
+.synonymDiv table tr td {
+	padding: 10px;
+}
+.CrosslanguageDiv table tr td {
+	padding: 10px;
+}
+.conditionsItem {
+	float: left;
+	border-radius: 10px;
+	height: 25px;
+	background-color: rgba(252, 252, 252, 1);
+	color:rgb(152,153,153);
+	width: 80px;
+	text-align: center;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	line-height: 25px;
+	margin-top: 12px;
+	cursor: pointer;
+}
+.Conditions {
+	line-height: 50px;
+	height: 50px;
+	margin-left: 20px;
+	margin-right:20px;
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	overflow: auto;
+}
+.addToWord {
+	width: 120px;
+	height: 42px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	background-color: rgb(51,169,226);
+	font-size: 16px;
+}
+.addToWord2 {
+	width: 120px;
+	height: 42px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	background-color: rgb(51,169,226);
+	font-size: 16px;
+}
+.addToSearch {
+	width: 120px;
+	height: 42px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	background-color: rgb(51,169,226);
+	font-size: 16px;
+}
+.addToSearch1 {
+	width: 120px;
+	height: 42px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	background-color: rgb(51,169,226);
+	font-size: 16px;
+}
+.cancleWord {
+	width: 120px;
+	height: 42px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	background-color: rgb(51,169,226);
+	font-size: 16px;
+}
+.contrastPageLRSty {
+	width: 435px;
+}
+.divSmallItemStyle {
+	width: 106px;
+	height: 30px;
+	float: left;
+	cursor: pointer;
+}
+.divSmallNormal {
+	background-color: rgb(252,251,251);
+	border: 1px solid #d3d3d3;
+	/*border-bottom: none;*/
+    height: 31px;
+	line-height: 30px;
+	text-align: center;
+}
+.divSmallSelect {
+	background-color: rgba(255, 255, 255, 1);
+	color: rgb(59,149,242);
+	border: 1px solid #d3d3d3;
+	border-bottom: none !important;
+	z-index: 10;
+	height: 31px;
+	line-height: 30px;
+	text-align: center;
+}
+.lrItem {
+	width: 430px;
+	height: 243px;
+	border: 1px solid #d3d3d3;
+	background-color: #ffffff;/*overflow: auto;*/
+}
+.btnBlueComp {
+	width: 120px;
+	height: 42px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	background-color: rgb(51,169,226);
+	font-size: 16px;
+}
+.addProvinceToSearch {
+	width: 120px;
+	height: 42px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	background-color: rgb(51,169,226);
+	font-size: 16px;
+}
+.addProvinceToSearch1 {
+	width: 120px;
+	height: 42px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	background-color: rgb(51,169,226);
+	font-size: 16px;
+}
+.btnSmallWhite {
+	overflow: hidden;
+}
+.conditionsItempan {
+	float: left;
+	border-radius: 10px;
+	height: 25px;
+	background-color: rgba(252, 252, 252, 1);
+	color:rgb(152,153,153);
+	width: 80px;
+	text-align: center;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	line-height: 25px;
+	margin-top: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.condition .heng {
+	color: #8a8a8a;
+	margin: 0px 0px 0px 15px;
+	padding-left:10px;
+}
+.condition li {
+	list-style: none;
+	float: left;
+	text-align: center;
+	margin-left: 5px;
+}
+.condition .conditionUnSelect {
+	color: #3498DB;
+	margin-left: 5px;
+	cursor: pointer;
+	padding: 0 15px 0 15px;
+}
+.conditionInput {
+	text-align: center;
+	width: 50px;
+}
+.conditionInput input {
+	width: 64px;
+	height: 20px;
+}
+.conditionSelected {
+	color: #000000 !important;
+	text-align: center;
+	padding: 0 15px 0 15px;
+}
+.fontWeight {
+	font-weight: bold;
+}
+.chinaUtlityPatent {
+	float: left;
+	margin-right:5px;
+	margin-bottom:10px;
+}
+#_fastSelectArea input {
+	padding:0px 5px 0px 5px;
+	margin:0px;
+	font-size:12px;
+}
+#_fastSelectArea table tr {
+	margin: 5px 0px 5px 0px;
+	height:25px;
+}
+.filedListTdHover {
+	background-color:rgb(36,144,216);
+	color: #ffffff;
+}
+.filedListTdClick {
+	background-color:rgb(36,144,216);
+	color: #ffffff;
+}
+.fieldMorePagesTdNormal {
+	border: 1px solid #d3d3d3;/*border-top: none;*/
+}
+.fieldMorePagesTdSel {
+	background-color:rgb(36,144,216);
+	color:#FFFFFF;/*border-top: none;*/
+}
+.marginLR20px {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.floatLeft {
+	float: left;
+}
+.displayInline {
+	display: inline-block;
+}
+.radioStyle {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+}
+.radioLabel {
+	font-size: 14px;
+	line-height:22px;
+}
+label.radioLabel {
+	margin: 0px;
+	padding:0px;
+	margin-left: 8px;
+}
+.radioNormal {
+	background: url(../../img/patent/patent_searchPage/ic0_1.png) no-repeat;
+}
+.keyRadio {
+	vertical-align: -10%;
+}
+.radioChecked {
+	background: url(../../img/patent/patent_searchPage/ic0_2.png) no-repeat;
+}
+.tabSeaHis {
+	border-collapse: collapse;
+}
+.tabSeaHisoederRight {
+	border-right:1px solid rgb(233,235,235);
+}
+.tabNumOdd, .tabNum1 {
+	background-color: #FFFFFF;
+}
+/*工具条样式*/
+.borderBottom241 {
+	border-bottom: 1px solid rgb(241,241,241);
+}
+/*商标的列表样式*/
+.tradtr-ImagTet {
+	width:auto;
+	border-top:none;
+	background-color:#fff;
+}
+.tradtr-ImagTet ul {
+	background-color:#fff;
+}
+.tradtr-ImagTet ul li {
+	margin-top:-6px;
+	width:auto;
+	height:auto!important;
+	height:155px;
+	min-height:155px;
+	position:relative;
+	border-bottom:1px solid #d3d3d3;
+	padding:20px 40px 15px 60px;
+	position:relative;
+	border-bottom:1px solid #d1e3ef;
+	font-size:12px;
+	clear:both;
+}
+.tradtr-ImagTet ul li:hover {
+	background-color:#fbf2f2;
+}
+.tradtr-ImagTet ul li.current {
+	background-color:#fbf2f2;
+}
+.tradtr-ImagTet ul li input[type="checkbox"] {
+	position:absolute;
+	top:65px;
+	left:10px;
+}
+.tradtr-ImagTet ul li p {
+	line-height:24px;
+	margin:0;
+	color:#666;
+}
+.tradtr-ImagTet ul li p font {
+	color:#648bcf;
+}
+.tradtr-ImagTet ul li h4 {
+	margin:0px;
+	font-size:14px;
+}
+.tradtr-ImagTet ul li h4 a, .tradtr-ImagTet ul li h5 a {
+	color:#648bcf;
+	text-decoration:none;
+}
+.tradtr-ImagTet ul li:last-child {
+	border-bottom:none;
+}
+.tradtr-ImagTet ul li .tradtr-ImagTet-fit {
+	float:left;
+	width:150px;
+	height:120px;
+	border:2px solid #eee;
+}
+.tradtr-ImagTet ul li .tradtr-ImagTet-sec {
+	float:left;
+	padding-left:20px;
+}
+.tradtr-ImagTet ul li .tradtr-ImagTet-sec td { padding: 0px 5px 8px 5px; white-space:nowrap;
+}
+.tradtr-ImagTet ul li .tradtr-ImagTet-sec p {
+	font-family: "Microsoft Yahei";
+}
+.tradtr-ImagTet ul li .tradtr-ImagTet-tid {
+	float:left;
+	width:30%;
+	padding-top:51px;
+}
+.tradtr-ImagTet ul li .tradtr-ImagTet-tid p {
+	font-family: "Microsoft Yahei";
+}
+.tradtr-ImagTet ul li h5 {
+	position:absolute;
+	top:10px;
+	right:145px;
+}
+.tradtr-ImagTet ul li h5 font {
+	padding:1px 5px;
+	background-color:#c56ab6;
+	color:#fff;
+	font-size:14px;
+}
+.tradtr-ImagTet ul li h6 {
+	position:absolute;
+	top:10px;
+	right:64px;
+}
+.tradtr-ImagTet ul li h6 font {
+	padding:1px 5px;
+	background-color:#648bcf;
+	color:#fff;
+	font-size:14px;
+}
+.tradtr-ImagTet ul li .tradtr-imgtrdmk {
+	float:right;
+}
+.tradtr-ImagTet ul li .tradtr-for-toolbar {
+	position:absolute;
+	bottom:16px;
+	right:30px;
+	width:140px;
+}
+.tradtr-ImagTab {
+	width:auto;
+	border-top:none;
+}
+.tradtr-ImagTable {
+	width:100%;
+	border:none;
+	border-spacing:0;
+	border-collapse:collapse;
+	background-color:#fff;
+}
+.tradtr-ImagTable tr {
+	border-bottom:1px solid #d3d3d3;
+}
+.tradtr-ImagTable tr:last-child {
+	border-bottom:none;
+}
+.tradtr-ImagTable td {
+	text-align:center;
+	border-right:1px solid #d3d3d3;
+}
+.tradtr-ImagTable td:last-child {
+	border-right:none;
+}
+.tradtr-ImagTable thead tr {
+	border-bottom:1px solid #d3d3d3!important;
+	background-color:#f6f9f9;
+}
+.tradtr-ImagTable thead tr td {
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	color:#1576b7;
+	white-space:nowrap;
+	padding:0 5px;
+}
+.tradtr-ImagTable tbody tr td {
+	height:35px;
+	line-height:22px;
+	padding:2px 5px;
+	font-size:12px;
+}
+.tradtr-ImagTable tbody tr td a {
+	color:#08c;
+	text-decoration:none;
+}
+.tradtr-ImagTable tbody tr td a:hover {
+	text-decoration:underline;
+}
+.tradtr-ImagSuf {
+	width:auto;
+	border-top:none;
+	background-color:#fff;
+}
+.tradtr-ImagSuf ul {
+	padding:15px 20px;
+}
+.tradtr-ImagSuf ul li {
+	float:left;
+	width:25%;
+	height:auto!important;
+	height:265px;
+	min-height:265px;
+	position:relative;
+	padding-top:13px;
+	padding-bottom:10px;
+	/*border-bottom:1px solid #d1e3ef;*/
+	text-align:center;
+}
+.tradtr-ImagSuf ul li:nth-child(4n+1){ clear:left;}
+.tradtr-ImagSuf ul li .tradtr-ImagSufimg {
+	width:150px;
+	height:120px;
+	margin:0 auto;
+	border:2px solid #eee;
+}
+.tradtr-ImagSuf ul li .tradtr-ImagSufimg-ecd {
+	position:absolute;
+	top:150px;
+	right:15px;
+	width:35px;
+	height:34px;
+}
+.tradtr-ImagSuf ul li h3, .tradtr-ImagSuf ul li p {
+	text-align:left;
+	width:150px;
+	margin:0 auto;
+}
+.tradtr-ImagSuf ul li h3 {
+	width:150px;
+	margin:0 auto;
+	line-height:30px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	font-weight:normal;
+	font-size:16px;
+}
+.tradtr-ImagSuf ul li h3 input[type="checkbox"] {
+	margin-right:5px;
+}
+.tradtr-ImagSuf ul li h3 a {
+	text-decoration:none;
+	color:#648bcf;
+}
+.tradtr-ImagSuf ul li p {
+	font-size:14px;
+}
+.tradtr-ImagSuf ul li .tradtr-for-toolbar {
+	width:140px;
+	margin:0 auto;
+	margin-top:7px;
+}
+.tradtr-Overvew {
+	width:auto;
+	border-top:none;
+	background-color:#fff;
+}
+.tradtr-Oveviw {
+	width:99.8%;
+	border:none;
+	border-spacing:0;
+	border-collapse:collapse;
+}
+.tradtr-Oveviw .tradtr-Oveviwlr {
+	width:500px;
+	vertical-align:top;
+}
+.tradtr-Oeviwlrcon {
+	padding:0px;  border-right:1px #D1E3EF solid;
+}
+.tradtr-Oeviwlrcont {
+	width:auto; margin-top:-10px; padding-left:10px;
+	border-bottom:1px solid #d1e3ef; padding-bottom:15px;
+}
+.tradtr-Oeviwlrcont h3 {
+	width:auto;
+	height:22px;
+	line-height:28px;
+}
+.tradtr-Oeviwlrcont h3 a {
+	margin-left:5px;
+	text-decoration:none;
+	font-size:15px;
+	color:#648bcf;
+	font-weight:normal;
+}
+.tradtr-Oeviwlrcont font {
+	display:block;
+	padding:0 8px;
+	color:#fff;
+	font-size:13px;
+	position:absolute;
+}
+.tradtr-Oeviwlrcont font.Effect {
+	background-color:#92ca7a;
+	top:8px;
+	right:115px;
+}
+.tradtr-Oeviwlrcont font.Effectwo {
+	background-color:#f00;
+	top:8px;
+	right:115px;
+}
+.tradtr-Oeviwlrcont font.Ordinary {
+	background-color:#3498db;
+	top:8px;
+	right:40px;
+}
+.tradtr-Oeviwlrcont ul {
+	width:440px;
+	height:120px;
+	min-height:120px;
+	padding:6px 3px;
+	clear:both;
+}
+.tradtr-Oeviwlrcont ul li {
+	float:left;
+	width:49%; padding: 0 0 2px 0;
+	font-size:13px;
+}
+.tradtr-Oeviwlrcont ul li.long {
+	width:400px;
+}
+.tradtr-Oeviwlrcont ul li b {
+	font-weight:normal;
+	color:#3498db;
+}
+.tradtr-Oeviwlrcont .tradtr-for-toolbar {
+	width:auto;
+	margin-top:3px;
+}
+.tradtr-Oveviw .tradtr-Oveviwrl {
+	width:100%;
+	vertical-align:top;
+}
+.tradtr-Oveviwrl .tradtr-Oveviwrlcon {
+	width:auto;
+	padding:10px 15px;
+	height:985px;
+	overflow:scroll;
+	position:relative;
+}
+.tradtr-Oveviwrlcon .tradtr-Oveviwrlimg {
+	float:left;
+	width:170px;
+	height:136px;
+	border:2px solid #eee;
+	margin-right:10px;
+	margin-top:18px;
+}
+.tradtr-Oveviwrlcon .tradtr-Oveviwrlicn {
+	width:35px;
+	height:34px;
+	position:absolute;
+	right:30px;
+	top:10px;
+}
+.tradtr-Oveviwrlcon h2 {
+	line-height:24px;
+	font-size:15px;
+}
+.tradtr-Oveviwrlcon h3 {
+	width:auto;
+	line-height:28px;
+	padding-left:10px;
+	background:url(../../img/nonpatent/Tradmark/Trademarkbg.png) -9px 2px no-repeat;
+	margin-top:8px;
+	font-size:14px;
+}
+.tradtr-Oveviwrlcon p {
+	line-height:24px;
+}
+.tradtr-Oveviwrlcon p font {
+	font-size:12px;
+	color:#3498db;
+}
+.tradtr-Oveviwrlcon p.left {
+	padding-left:60px;
+}
+.tradtr-Oveviwrlcon a {
+	color:#3498db;
+}
+.tradtr-Ovwrlcotab {
+	width:90%;
+	height:auto!important;
+	height:30px;
+	min-height:30px;
+	border:1px solid #797979;
+	border-bottom:none;
+	border-right:none;
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.tradtr-Ovwrlcotab thead td {
+	background-color:#f6f7f7;
+}
+.tradtr-Ovwrlcotab tbody {
+}
+.tradtr-Ovwrlcotab td {
+	padding:0 3px;
+	height:30px;
+	line-height:20px;
+	border-bottom:1px solid #797979;
+	border:1px solid #797979;
+	text-align:center;
+}
+.tradtr-for-toolbar span {
+	display:block;
+	float:left;
+	width:20px;
+	height:20px;
+	text-align:center;
+	font-weight:normal;
+	color:#d2d2d1;
+}
+.tradtr-for-toolbar span a {
+	float:left;
+	display:block;
+	width:auto!important;
+	width:20px;
+	min-width:20px;
+	white-space:nowrap;
+	height:20px;
+}
+.tradtr-for-toolbar span a.trd-jionItem {
+	background:url(../../img/nonpatent/Tradmark/ic1_3.png) center center no-repeat;
+}
+.tradtr-for-toolbar span a.trd-jionItem:hover {
+	background:url(../../img/nonpatent/Tradmark/ic1_4.png) center center no-repeat;
+}
+.tradtr-for-toolbar span a.trd-legalSte {
+	background:url(../../img/nonpatent/Tradmark/ic3_3.png) center center no-repeat;
+}
+.tradtr-for-toolbar span a.trd-legalSte:hover {
+	background:url(../../img/nonpatent/Tradmark/ic3_4.png) center center no-repeat;
+}
+.tradtr-for-toolbar span span.trd-Warning {
+	background:url(../../img/nonpatent/Tradmark/ic5_3.png) center center no-repeat;cursor: pointer;
+}
+.tradtr-for-toolbar span span.trd-Warning:hover {
+	background:url(../../img/nonpatent/Tradmark/ic5_4.png) center center no-repeat;cursor: pointer;
+}
+.tradtrCS {
+	margin-right:5px;
+	margin-top:5px;
+	display:block;
+	float:left;
+	background-color: #c56ab6;
+	color:#fff;
+	font-weight:bold;
+	height:25px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align: center;
+	line-height: 25px;
+}
+.tradtrRANK {
+	margin-right:5px;
+	margin-top:5px;
+	display:block;
+	float:left;
+	background-color: #0ACE21;
+	color:#fff;
+	font-weight:bold;
+	height:25px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align: center;
+	line-height: 25px;
+}
+.tradtrKind {
+	margin-right:5px;
+	margin-top:5px;
+	display:block;
+	float:left;
+	background-color: #648bcf;
+	color:#fff;
+	font-weight:bold;
+	height:25px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align: center;
+	line-height: 25px;
+}
+.inputp {
+	position:absolute;
+	top:65px;
+	left:10px;
+}
+#theme {
+	background-color: #ffffff;
+}
+.Effectss {
+	color:#fff;
+	padding-left:10px;
+	padding-right:10px;
+	background-color:#92ca7a;
+}
+.tradeMarkType {
+	padding-left:10px;
+	padding-right:10px;
+	background-color: #3498db;
+	color:#fff;
+}
+.newClass {
+	float:right;
+	margin-right:10px;
+	height:25px;
+	line-height: 25px;
+}
+.period-oveview {
+	width:auto;
+	border-top:none;
+	padding-bottom:30px;
+}
+#wrap0, #wrap1, #wrap2 {
+	padding:0;
+	overflow:hidden;
+}
+#read-more {
+	padding:5px;
+	color:#333;
+}
+#read-more a {
+	padding-right:22px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#09f;
+}
+.period-oveview .period-oveviewtb {
+	width:93%;
+	margin-left:3%;
+	padding-left:3%;
+	padding-top:15px;
+	position:relative;
+	border-bottom:1px solid #d1e3ef;
+}
+.period-oveview .period-oveviewtb:hover {
+	background-color:#fbf2f2;
+}
+.period-oveviewtb input[type="checkbox"] {
+	position:absolute;
+	top:23px;
+	left:5px;
+}
+.period-oveviewtb h3, .period-oveviewtb h4, .period-oveviewtb h5 {
+	height:28px;
+	line-height:28px;
+	font-size:14px;
+	font-family:"Microsoft Yahei";
+}
+.period-oveviewtb h3 a, .period-oveviewtb font, .period-oveviewtb b {
+	padding-right:15px;
+	color:#09f;
+	font-weight:normal;
+}
+.period-oveviewtb h3 a {
+	text-decoration:none;
+}
+.period-oveviewtb h5 {
+	color:#f00;
+}
+.period-oveviewtb .tradtr-for-toolbar {
+	height:30px;
+}
+.Stdard-oveview {
+	width:auto;
+	border-top:none;
+	padding-bottom:30px;
+}
+.Stdard-oveview .Stdard-oveviewtb {
+	width:93%;
+	margin-left:3%;
+	padding-left:3%;
+	padding-top:15px;
+	position:relative;
+	border-bottom:1px solid #d1e3ef;
+}
+.Stdard-oveview .Stdard-oveviewtb:hover {
+	background-color:#fbf2f2;
+}
+.Stdard-oveviewtb input[type="checkbox"] {
+	position:absolute;
+	top:23px;
+	left:5px;
+}
+.Stdard-oveviewtb font {
+	position:absolute;
+	top:16px;
+	right:8px;
+	display:block;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	background-color:#093;
+	color:#fff;
+	font-size:12px;
+	font-weight:normal;
+}
+.Stdard-oveviewtb h3, .Stdard-oveviewtb h4 {
+	height:28px;
+	line-height:28px;
+	font-size:14px;
+	font-family:"Microsoft Yahei";
+	font-weight:normal;
+}
+.Stdard-oveviewtb h3 a {
+	padding-right:15px;
+	color:#09f;
+	font-weight:normal;
+	text-decoration:none;
+}
+.Stdard-oveviewtb .tradtr-for-toolbar {
+	height:30px;
+}
+.copyBtn {
+	width: 150px;
+	height: 25px;
+	border-radius: 2px;
+	margin-left: 12px;
+	margin-top:7px;
+	border:1px solid rgb(210,208,208);
+	background-image: url("../../img/patent/table/ic1_1.png");
+	background-repeat: no-repeat;
+	background-color: rgb(246,247,247);
+	background-position:6px 5px;
+}
+.iconFirst-displayInline-status-Green{
+	background-color: #648bcf;
+	width:auto!important;
+	width: 80px;
+	min-width:80px;
+	padding:0 5px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin-right:15px;
+	color: #FFFFFF;
+	float: right;
+	font-weight: 900;
+}
+.iconFirst-displayInline-status-Yellow{
+	background-color: #648bcf;
+	width: 80px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	margin-right:20px;
+	color: #FFFFFF;
+	float: right;
+	font-weight: 900;
+}
+.iconFirst-displayInline-status-Blue{
+	background-color: #c56ab6;
+	width: auto;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	margin-right:15px;
+	color: #FFFFFF;
+	float: right;
+	font-weight: 900;
+	padding-left:10px;
+	padding-right:10px;
+}
+.HNOLink,.ARLink{
+	white-space:normal;
+	letter-spacing:1px;
+}
+.pdf
+{
+    background: url("../../img/patent/searOverview/ic2_2.png");
+    width: 13px;
+    height: 14px;
+}
+
+/**工具条*/
+/*.right_nav{ width:145px; height:auto!important; height:200px; min-height:200px; line-height:200px; position:fixed; right:40px; top:50%; margin:-125px 0px 0px -200px; z-index:777; background-color:#fff; color:inherit; box-shadow:0px 0px 10px rgba(0, 0, 0, 0.35); border-radius:3px;}*/
+.right_nav dl dd{ width:128px; height:30px; position:relative;}
+
+.right_nav{ width:145px; height:auto!important; height:200px; min-height:200px; position:fixed; right:43px; top:63%; margin:-150px 0px 0px -650px; z-index:777; color:inherit;/* box-shadow:0px 0px 10px rgba(0, 0, 0, 0.35); border-radius:3px;*/}
+.right_nav dl{ width:145px; height:auto!important; height:200px; min-height:200px; position:relative; border:1px solid #ccc; border-radius:5px; background:#fff;
+box-shadow:0px 0px 10px rgba(0,0,0,0.35);
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+-moz-box-shadow:1px 1px 2px rgba(0,0,0,.2);
+-webkit-box-shadow:1px 1px 2px rgba(0,0,0,.2);}
+.right_nav dl dd .nav_left{ width:110px; height:auto!important; height:30px; min-height:30px; overflow:hidden; position:absolute; right:125px; top:0px; padding:0px 5px;background:#fff; display:none;}
+.right_nav dl dd .nav_left a{ width:100px; height:30px; line-height:30px; text-align:left; color:#666; padding-left:5px; display:block; float:left; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;}
+.right_nav dl dd .nav_left a:hover{ text-decoration:underline;}
+.right_nav dl dd a.nav_right{width:115px; height:29px; line-height:29px; padding-left:13px; display:block; border-bottom:1px solid #f1f1f1; color:#3C4347; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden; cursor:pointer;}
+.right_nav dl dd a.nav_right:hover{ background-color:rgb(234,246,254); color:rgb(8,125,204); text-decoration:none;}
+.triangle{ position:absolute; bottom:120px; font-size:18px;}
+.triangle em{ color:#ccc;}
+.triangle span{ position:absolute; color:#fff}
+.t-rgt{ right:-12px}
+.t-rgt em{ right:0px; position:absolute}
+.t-rgt span{ right:1px}
+
+/** 判例下拉列表 */
+.rightnumTip{ }
+#select01{ position: absolute; background-color: #294a94; padding:10px; right:0px; z-index:1; top: 26px; display:none;}
+#select01 ul li{ line-height:26px; color:#fff;}
+
+/*!
+ * Datepicker for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}.hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.bootstrap-datetimepicker-widget{top:0;left:0;width:250px;padding:4px;margin-top:1px;z-index:3000;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.bootstrap-datetimepicker-widget:before{content:'';display:inline-block;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #ccc;border-bottom-color:rgba(0,0,0,0.2);position:absolute;top:-7px;left:6px}.bootstrap-datetimepicker-widget:after{content:'';display:inline-block;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid #fff;position:absolute;top:-6px;left:7px}.bootstrap-datetimepicker-widget.pull-right:before{left:auto;right:6px}.bootstrap-datetimepicker-widget.pull-right:after{left:auto;right:7px}.bootstrap-datetimepicker-widget>ul{list-style-type:none;margin:0}.bootstrap-datetimepicker-widget .timepicker-hour,.bootstrap-datetimepicker-widget .timepicker-minute,.bootstrap-datetimepicker-widget .timepicker-second{width:100%;font-weight:bold;font-size:1.2em}.bootstrap-datetimepicker-widget table[data-hour-format="12"] .separator{width:4px;padding:0;margin:0}.bootstrap-datetimepicker-widget .datepicker>div{display:none}.bootstrap-datetimepicker-widget .picker-switch{text-align:center}.bootstrap-datetimepicker-widget table{width:100%;margin:0}.bootstrap-datetimepicker-widget td,.bootstrap-datetimepicker-widget th{text-align:center;width:20px;height:20px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.bootstrap-datetimepicker-widget td.day:hover,.bootstrap-datetimepicker-widget td.hour:hover,.bootstrap-datetimepicker-widget td.minute:hover,.bootstrap-datetimepicker-widget td.second:hover{background:#eee;cursor:pointer}.bootstrap-datetimepicker-widget td.old,.bootstrap-datetimepicker-widget td.new{color:#999}.bootstrap-datetimepicker-widget td.active,.bootstrap-datetimepicker-widget td.active:hover{color:#fff;background-color:#006dcc;background-image:-moz-linear-gradient(top,#08c,#04c);background-image:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#04c));background-image:-webkit-linear-gradient(top,#08c,#04c);background-image:-o-linear-gradient(top,#08c,#04c);background-image:linear-gradient(to bottom,#08c,#04c);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0044cc',GradientType=0);border-color:#04c #04c #002a80;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);*background-color:#04c;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.bootstrap-datetimepicker-widget td.active:hover,.bootstrap-datetimepicker-widget td.active:hover:hover,.bootstrap-datetimepicker-widget td.active:active,.bootstrap-datetimepicker-widget td.active:hover:active,.bootstrap-datetimepicker-widget td.active.active,.bootstrap-datetimepicker-widget td.active:hover.active,.bootstrap-datetimepicker-widget td.active.disabled,.bootstrap-datetimepicker-widget td.active:hover.disabled,.bootstrap-datetimepicker-widget td.active[disabled],.bootstrap-datetimepicker-widget td.active:hover[disabled]{color:#fff;background-color:#04c;*background-color:#003bb3}.bootstrap-datetimepicker-widget td.active:active,.bootstrap-datetimepicker-widget td.active:hover:active,.bootstrap-datetimepicker-widget td.active.active,.bootstrap-datetimepicker-widget td.active:hover.active{background-color:#039 \9}.bootstrap-datetimepicker-widget td.disabled,.bootstrap-datetimepicker-widget td.disabled:hover{background:0;color:#999;cursor:not-allowed}.bootstrap-datetimepicker-widget td span{display:block;width:47px;height:54px;line-height:54px;float:left;margin:2px;cursor:pointer;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.bootstrap-datetimepicker-widget td span:hover{background:#eee}.bootstrap-datetimepicker-widget td span.active{color:#fff;background-color:#006dcc;background-image:-moz-linear-gradient(top,#08c,#04c);background-image:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#04c));background-image:-webkit-linear-gradient(top,#08c,#04c);background-image:-o-linear-gradient(top,#08c,#04c);background-image:linear-gradient(to bottom,#08c,#04c);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0044cc',GradientType=0);border-color:#04c #04c #002a80;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);*background-color:#04c;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.bootstrap-datetimepicker-widget td span.active:hover,.bootstrap-datetimepicker-widget td span.active:active,.bootstrap-datetimepicker-widget td span.active.active,.bootstrap-datetimepicker-widget td span.active.disabled,.bootstrap-datetimepicker-widget td span.active[disabled]{color:#fff;background-color:#04c;*background-color:#003bb3}.bootstrap-datetimepicker-widget td span.active:active,.bootstrap-datetimepicker-widget td span.active.active{background-color:#039 \9}.bootstrap-datetimepicker-widget td span.old{color:#999}.bootstrap-datetimepicker-widget td span.disabled,.bootstrap-datetimepicker-widget td span.disabled:hover{background:0;color:#999;cursor:not-allowed}.bootstrap-datetimepicker-widget th.switch{width:145px}.bootstrap-datetimepicker-widget th.next,.bootstrap-datetimepicker-widget th.prev{font-size:21px}.bootstrap-datetimepicker-widget th.disabled,.bootstrap-datetimepicker-widget th.disabled:hover{background:0;color:#999;cursor:not-allowed}.bootstrap-datetimepicker-widget thead tr:first-child th{cursor:pointer}.bootstrap-datetimepicker-widget thead tr:first-child th:hover{background:#eee}.input-append.date .add-on i,.input-prepend.date .add-on i{display:block;cursor:pointer;width:16px;height:16px}.bootstrap-datetimepicker-widget.left-oriented:before{left:auto;right:6px}.bootstrap-datetimepicker-widget.left-oriented:after{left:auto;right:7px}
+
+#mGrid_patentGrid .lastPage { display: none;}
+#mGrid_patentGrid .firstPage { display: none;}
+
+#mGrid_patentGrid .nextPage a{ border-top-right-radius: 4px; border-bottom-right-radius: 4px;}
+#mGrid_patentGrid .prevPage a{ border-left-width: 1px; border-bottom-left-radius: 4px; border-top-left-radius: 4px;}
+
+.imgContentLighHight{ line-height:24px;}
+
+.alreadySelectContent { height: 165px; overflow-y:auto; overflow-x:hidden;}
+
+.listHightDivab{ display:block; width:430px; height:22px; line-height:22px; overflow:hidden; text-overflow:ellipsis; -o-text-overflow:ellipsis; white-space:nowrap;}
+
+

@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- HEAD SECTION -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>积分页面数据</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+
+    <link rel="stylesheet" href="../assets/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/adm.css">
+    <link rel="stylesheet" href="../assets/css/skin-blue.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="hold-transition skin-blue">
+<!--======================  -->
+    <div class="wrapper">
+
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="" class="logo">
+          <img src="../assets/img/logo.png" alt="" style="height:50px;width:auto">
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="glyphicon glyphicon-th-list"></span>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="navbar-custom-menu pull-left">
+            <ul class="nav navbar-nav ">
+             <!-- 水平导航栏目录 -->
+               <li><a href="">cloudfarm后台管理</a></li>
+               <li><a href=""></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+           <a href="#" style="font-size:20px;padding-left:30px">目录</a>
+          </div>
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+            <li><a href="index.html"><i class="fa fa-circle-o text-yellow"></i> <span>用户管理</span></a></li>
+            <li>
+              <a href="farm.html">
+                <i class="fa fa-table"></i><span>农田数据</span>
+              </a>
+            </li>
+           
+            <li class="">
+              <a href="stock.html">
+                <i class="fa fa-table"></i><span>仓库数据</span>
+              </a>
+             
+            </li>
+           
+            <li class="active">
+              <a href="score.html">
+                <i class="fa fa-table"></i><span>积分数据</span>
+              </a>
+            </li>
+             <li>
+              <a href="send.html">
+                <i class="fa fa-table"></i><span>配送管理</span>
+              </a>
+            </li>
+             <li>
+              <a href="pkage.html">
+                <i class="fa fa-table"></i><span>套餐数据</span>
+              </a>
+            </li>
+            <li><a href="product.html"><i class="fa fa-circle-o text-red"></i> <span>产品管理</span></a></li>
+             <li><a href="article.html"><i class="fa fa-circle-o text-red"></i> <span>文章管理</span></a></li>
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+<h4>系统公告</h4>
+<input type="text" id="txt-notice" ></input><input type="button" id="btn-notice" value="保存"></input>
+<h4>联系我们</h4>
+电话：<input type="text" id="txt-tel"></input><input type="button" id="btn-tel"  value="保存"></input>
+地址：<input type="text" id="txt-address"></input><input type="button" id="btn-address"  value="保存"></input>
+邮编：<input type="text" id="txt-postcode"></input><input type="button" id="btn-postcode"  value="保存"></input>
+<!--<h4>首页第5栏</h4>
+名称：<input type="text" id="txt-index5name"></input><input type="button" id="btn-index5name"  value="保存"></input>
+-->
+       <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+    </div>
+
+ <!-- ========================= -->
+    <script src="../assets/js/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+    <script src="../assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+  
+    <script>
+
+    var API_URL = '../api/master/list';
+    var API_URL_SAVE = 'http://localhost:8080/api/score/save';
+    var API_URL_DEL = 'http://localhost:8080/api/score/delete?id=';
+
+    $(function () {
+        $.ajax(
+                {
+                    "type": "post",
+                    "contentType": "application/json; charset=utf-8",
+                    "url" : API_URL,
+                    "success": function(data)
+                    { 
+                    	for(var i = 0; i<data.length;i++){
+                    		var master = data[i];
+                            if(master.mtype=="NOTICE" && master.mkey=="1"){
+                                $('#txt-notice').val(master.value);
+                            }
+                            if(master.mtype=="CONTACT" && master.mkey=="TEL"){
+                                $('#txt-tel').val(master.value);
+                            }
+                            if(master.mtype=="CONTACT" && master.mkey=="ADDRESS"){
+                                $('#txt-address').val(master.value);
+                            }
+                            if(master.mtype=="CONTACT" && master.mkey=="POSTCODE"){
+                                $('#txt-postcode').val(master.value);
+                            }
+
+                    	}
+             
+                       return;
+                    },"error": function(XMLHttpRequest, textStatus, errorThrown )
+                    {     
+                        alert(XMLHttpRequest.responseText);
+                        return;
+                     }
+                 });
+      
+
+    });
+    $("#btn-notice").click(function(){
+        var master = {mtype:"NOTICE",mkey:"1",value:$('#txt-notice').val()};
+        mastersave(master);
+
+    });
+    $("#btn-tel").click(function(){
+        var master = {mtype:"CONTACT",mkey:"TEL",value:$('#txt-tel').val()};
+        mastersave(master);
+    });
+    $("#btn-address").click(function(){
+        var master = {mtype:"CONTACT",mkey:"ADDRESS",value:$('#txt-address').val()};
+        mastersave(master);
+    });
+    $("#btn-postcode").click(function(){
+        var master = {mtype:"CONTACT",mkey:"POSTCODE",value:$('#txt-postcode').val()};
+        mastersave(master);
+    });
+
+    function mastersave(master){
+        $.ajax(
+        {
+            "type": "post",
+            "data":JSON.stringify(master),
+            "contentType": "application/json; charset=utf-8",
+            "url" : "../api/master/save",
+            "success": function(data)
+            { 
+               alert("success");
+               return;
+            },"error": function(XMLHttpRequest, textStatus, errorThrown )
+            {     
+                alert(XMLHttpRequest.responseText);
+                return;
+             }
+         });
+    }
+</script>
+</body>
+</html>

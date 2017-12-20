@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>产品上传</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+ <!--引入CSS-->
+<link rel="stylesheet" type="text/css" href="../ueditor/third-party/webuploader/webuploader.css">
+
+<!--引入JS-->
+<script type="text/javascript" src="../ueditor/third-party/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../ueditor/third-party/webuploader/webuploader.js"></script>
+<!--SWF在初始化的时候指定，在后面将展示-->
+ 
+ 
+</head>
+<body>
+<div>
+    <h1>图片上传</h1>
+</div>
+<!--dom结构部分-->
+ <input id="productid" type="text" name="fname" />
+ <input type="button" name="产品ID" id="btn-productid" value='产品ID'></input>
+<div id="uploader-demo">
+    <!--用来存放item-->
+    <div id="fileList" class="uploader-list"></div>
+    <div id="filePicker">选择图片</div>
+</div>
+ <input type="button" name="重置上传" id="btn-reset" value='重置'></input>
+
+<script type="text/javascript">
+
+//图片上传demo
+jQuery(function() {
+    var $ = jQuery,
+        $list = $('#fileList'),
+        // 优化retina, 在retina下这个值是2
+        ratio = window.devicePixelRatio || 1,
+
+        // 缩略图大小
+        thumbnailWidth = 100 * ratio,
+        thumbnailHeight = 100 * ratio,
+
+        // Web Uploader实例
+        uploader;
+
+    // 初始化Web Uploader
+    uploader = init();
+
+    function init(){
+        // 初始化Web Uploader
+        var uploader = WebUploader.create({
+            // 自动上传。
+            auto: true,
+            // swf文件路径
+            swf: '../ueditor/thire-party/webuploader/Uploader.swf',
+            // 文件接收服务端。
+            //server: '/ued/config?action=uploadimage',
+            //server: '/api/producturl/saveurl?id=1',
+            server: '/api/producturl/upload',
+            // 选择文件的按钮。可选。
+            // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+            pick: '#filePicker',
+            //  [默认值：'file'] 设置文件上传域的name。
+            fileVal:'upfile',
+            // [默认值：undefined] 验证文件总数量, 超出则不允许加入队列。
+            fileNumLimit:1,
+            //[默认值：{}] 文件上传请求的参数表，每次发送都会发送此对象中的参数。
+            //formData :{"productid":1},// 产品ID
+            // 只允许选择文件，可选。
+            accept: {
+                title: 'Images',
+                extensions: 'gif,jpg,jpeg,bmp,png',
+                mimeTypes: 'image/*'
+            }
+        });
+        return uploader;
+    }
+    
+    // 当有文件添加进来的时候
+    uploader.on( 'fileQueued', function( file ) {
+        var $li = $(
+                '<div id="' + file.id + '" class="file-item thumbnail">' +
+                    '<img>' +
+                    '<div class="info">' + file.name + '</div>' +
+                '</div>'
+                ),
+            $img = $li.find('img');
+
+        $list.append( $li );
+
+        // 创建缩略图
+        uploader.makeThumb( file, function( error, src ) {
+            if ( error ) {
+                $img.replaceWith('<span>不能预览</span>');
+                return;
+            }
+
+            $img.attr( 'src', src );
+        }, thumbnailWidth, thumbnailHeight );
+    });
+
+    // 文件上传过程中创建进度条实时显示。
+    uploader.on( 'uploadProgress', function( file, percentage ) {
+        var $li = $( '#'+file.id ),
+            $percent = $li.find('.progress span');
+
+        // 避免重复创建
+        if ( !$percent.length ) {
+            $percent = $('<p class="progress"><span></span></p>')
+                    .appendTo( $li )
+                    .find('span');
+        }
+
+        $percent.css( 'width', percentage * 100 + '%' );
+    });
+
+    // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+    uploader.on( 'uploadSuccess', function( file,response ) {
+        $( '#'+file.id ).addClass('upload-state-done');
+        alert('uploadSuccess'+response.infoMap.url);
+    });
+
+    // 文件上传失败，现实上传出错。
+    uploader.on( 'uploadError', function( file,e ) {
+        var $li = $( '#'+file.id ),
+            $error = $li.find('div.error');
+
+        // 避免重复创建
+        if ( !$error.length ) {
+            $error = $('<div class="error"></div>').appendTo( $li );
+        }
+
+        $error.text('上传失败');
+    });
+
+    // 完成上传完了，成功或者失败，先删除进度条。
+    uploader.on( 'uploadComplete', function( file ) {
+        $( '#'+file.id ).find('.progress').remove();
+    });
+    // 指定产品ID
+    $("#btn-productid").click(function(){
+    	//uploader.options.server="/api/producturl/saveurl?id="+$("#productid").val();
+      
+    });
+    // 重置上传控件
+    $("#btn-reset").click(function(){
+    	uploader.reset();
+    	$list.html("");
+    	//uploader = init();
+      
+    });
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+spring:
+#数据库连接
+  datasource:
+    platform: mysql
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testshiro
+    username: root
+    password: root
+    max-active: 800
+    test-while-idle: true
+    validation-query: SELECT 1 from dual
+  jpa:
+    hibernate:
+          ddl-auto: update
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    parser:
+      ALLOW_UNQUOTED_FIELD_NAMES:on
+server:
+     port: 8080
+     #context-path: /farm
+     #servlet-path: /farm
+     tomcat:
+#         accessLogEnabled: false
+         max-threads: 60
+         uri-encoding: UTF-8

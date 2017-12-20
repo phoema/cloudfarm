@@ -1,0 +1,21 @@
+spring:
+#数据库连接
+  datasource:
+    platform: mysql
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://jiahhpc:3306/testshiro
+    username: root
+    password: root
+    max-active: 800
+  jpa:
+    hibernate:
+          ddl-auto: update
+  jackson:
+    parser:
+      ALLOW_UNQUOTED_FIELD_NAMES:on
+server:
+     port: 8080
+     tomcat:
+#         accessLogEnabled: false
+         max-threads: 60
+         uri-encoding: UTF-8

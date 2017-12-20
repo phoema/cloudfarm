@@ -1,0 +1,196 @@
+/*用户界面所用样式*/
+.clear{clear:both;font-size:1px;width:1px;height:0;visibility:hidden;margin-top:0px!important;*margin-top:-1px;line-height:0}
+
+/*钻石用户行样式*/
+.homePageTop{ background-color:#FFF; border-bottom-left-radius:67px; border-top-left-radius:67px; border:1px solid #B0BAC3;}
+.userInfo{ background:url(../img/userName.png) no-repeat bottom left -4px; padding:12px 0px; margin-left:72px;}
+.userInfoBottom{ padding:6px 0px; margin-left:72px;}
+.userName{ padding:5px 15px 5px 10px;}
+.userLevel{ background:url(../img/Diamond.png) no-repeat 0px 5px; padding:5px 0px 5px 23px; }
+.userScore{ padding:8px 0px;}
+b.ic-star{ display:inline-block; width:13px; height:14px; vertical-align:-1px; margin:0 -1px;}
+.bg-index{ background:url(../img/ic-star.png) no-repeat center;}
+
+.user_inpbtn{ border:none; background:none; width:auto; height:28px; white-space:nowrap; margin:0 3px; background-color:#648bcf; line-height:28px; padding:0 16px; border-radius:2px; color:#fff; font-size:16px;}
+.user_inpbtn:hover{ background-color:#dedede; color:#666;}
+.int{ float:left;}
+
+.user_inpbtnsd{ border:none; background:none; width:auto; height:28px; white-space:nowrap; margin:0 3px; background-color:#f5f4f4; line-height:28px; padding:0 16px; border-radius:2px; color:#666; font-size:16px;}
+.user_inpbtnsd:hover{ background-color:#dedede;}
+
+.user_inpbtnfor{ border:none; background:none; width:auto; height:22px; white-space:nowrap; margin:0 3px; background-color:#648bcf; line-height:22px; padding:0 10px; border-radius:2px; color:#fff; font-size:12px;}
+.user_inpbtnfor:hover{ background-color:#dedede; color:#666;}
+
+.user_zsyhtop{ width:99%; height:51%; margin-left:1%; border-bottom:1px solid #e6e6e6;}
+.user_zsyhtop h3{ float:left; line-height:100%; padding-left:10px; font-weight:normal; font-size:14px;}
+.user_zsyhtop span{ float:right; line-height:34px; padding-right:10px; color:#b9b9b9;}
+.user_zsyhtopbot{ clear:both; padding:10px 14px 4px; overflow:auto; }
+.user_zsyhtopbot img{ float:left; padding:0 8px 0 0; margin-top:-2px;}
+.user_zsyhtopbot span{ float:left; padding:0 22px 0 0}
+
+.user_rgtitle{ width:100%; height:34px; line-height:37px!important; border-bottom:3px solid #8098bc;}
+.user_rgtitle span{ display:block; white-space:nowrap; width:auto; height:34px; padding:0 15px; float:left; zoom:1; background:url(../img/titelbg_03.png) repeat-x; position:relative;}
+.user_rgtitle span a{ color:#fff; font-size:14px; text-decoration:none;}
+.user_rgtitle span b{ padding:0 5px; color:#fff; font-family:"SimSun"; font-weight:normal;}
+.user_rgtitle span .user_rgtitlemin{ position:absolute; top:1px; right:-36px; z-index:1;}
+
+.user_rgcont{ width:100%; height:auto!important; height:300px; min-height:300px; padding-top:10px; background-color:#fff;}
+.user_rgcontit{ width:97%; height:34px; margin:0 auto; position:relative; border-bottom:1px dashed #648bcf; margin-top:-10px; margin-bottom:22px;}
+.user_rgcontit h4{ margin:0; width:auto; float:left; zoom:1; white-space:nowrap; padding:0 13px 0 25px; line-height:34px; background-color:#fff; font-size:16px; color:#648bcf; font-weight:normal; position:absolute; left:2px; top:17px;}
+.user_rgcontit h4 b{ display:block; width:12px; height:12px; background:url(../img/titelbg_04.png) no-repeat; position:absolute; left:3px; top:11px;}
+.user_rgcontit h4 .numerbg{ width:40px; height:31px; background:url(../img/jinb_05.png) no-repeat center left; line-height:31px; text-align:center; padding:3px 8px 3px 5px; text-align:center; position:absolute; top:-2px; right:-53px; color:#fff; font-size:12px; font-family:"SimSun";}
+.user_rgcotitle{ width:95%; margin:0 auto; height:40px; line-height:40px; padding:10px 0; text-align:center; border-bottom:5px solid #f4f4f4; font-size:20px; color:#333; font-family:"Microsoft Yahei"; font-weight:bold;}
+.user_rgcont .user_rgcontet{ width:100%; height:auto!important; height:260px; min-height:260px;}
+.user_rgcont .user_rgcotitent{ width:90%; margin:0 auto; height:auto!important; height:260px; min-height:260px; font-family:"Microsoft Yahei";}
+
+.user_rgcotitent h3{ width:auto; height:30px; line-height:30px; margin-top:30px; margin-bottom:10px; font-size:18px; color:#1868B3;}
+.user_rgcotitent p{ width:auto; line-height:22px;}
+
+.user_infordip{ width:100%; height:auto!important; height:50px; min-height:50px;}
+.user_infordip ul{ width:100%; clear:both; padding-bottom:15px;}
+.user_infordip ul li{ float:left; width:48%; height:auto!important; height:32px; min-height:32px; line-height:32px;}
+.user_infordip ul li span{ float:left; display:block; line-height:32px; font-size:14px;}
+.user_infordip ul li .user_infordiplr{ width:260px; padding-right:10px; text-align:right;}
+.user_infordip ul li .user_infordiprl{ width:auto;}
+
+.user_infordips{ width:100%; height:auto!important; height:50px; min-height:50px;}
+.user_infordips ul{ width:100%; clear:both; padding-bottom:15px;}
+.user_infordips ul li{ width:100%; height:auto!important; height:32px; min-height:32px; line-height:32px; clear:both;}
+.user_infordips ul li span{ float:left; display:block; line-height:32px; font-size:14px;}
+.user_infordips ul li .user_infordipslr{ width:25%; padding-right:10px; text-align:right;}
+.user_infordips ul li .user_infordipsrl{ width:72%; overflow:auto;}
+
+.user_formtext{ width:auto; height:auto!important; height:300px; min-height:300px;}
+.user_formtext ul{ padding:30px 10px;}
+.user_formtext ul li{ width:auto; height:auto!important; height:40px; min-height:40px; clear:both; line-height:40px;}
+.user_formtext ul li span{ float:left; display:block; line-height:32px; white-space:nowrap; font-size:14px;}
+.user_formtext ul li span font{ vertical-align:middle; margin-right:5px; font-weight:bold; color:#f00; font-size:20px;}
+.user_formtext ul li input[type="text"]{ height:18px; line-height:18px;}
+.user_formtext ul li input[type="radio"],.user_formtext ul li input[type="checkbox"]{ display:inline; margin-top:-2px;}
+.user_formtext ul li label{ padding-right:15px; padding-left:5px; display:inline}
+.user_formtext ul li input.wid80{ width:70px; margin-right:5px;}
+.user_formtext ul li .user_formtextlr{ width:260px; padding-right:10px; text-align:right;}
+.user_formtext ul li .user_formtextrl{ width:auto;}
+.user_formtext ul li.mangwarning{}
+.user_formtext ul li.mangwarning input[type="text"]{ float:left; border:1px solid #f1585d;}
+.user_formtext ul li.mangwarning input[type="text"]:focus{ border-color:#f1585d; outline:0px none; box-shadow:0px 0px 3px rgba(0, 0, 0, 0.15) inset, 0px 0px 8px rgba(248, 119, 123, 0.6);}
+.user_formtext ul li.mangwarning .inermangwarning{ white-space:nowrap; position:relative; padding:0px 15px 0px 36px; border:1px solid #F8DBB1; margin-left:10px; background-color:#FFFAF3; color:inherit; box-shadow:0px 0px 3px rgba(0, 0, 0, 0.15); border-radius:3px; height:26px; line-height:26px; font-size:12px; font-weight:normal;}
+.user_formtext ul li.mangwarning .inermangwarning .micon{ position:absolute; left:12px; top:5px; z-index:10; background:url(../img/i-warning.png) no-repeat; display:inline-block; width:16px; height:16px; vertical-align:middle;}
+.user_formtextbtn{ width:auto; text-align:center; padding:10px 0 20px;}
+.user_formtextbtn input[type="button"]{ border:none; background:none; width:auto; height:32px; white-space:nowrap; margin:0 10px; background-color:#648bcf; line-height:32px; padding:0 16px; border-radius:2px; color:#fff; font-size:16px;}
+.user_formtextbtn input[type="button"]:hover{ background-color:#dedede; color:#666;}
+
+.money_title{ clear:both; padding:10px 0 0 20px; font-family:SimSun;}
+.money_title p{ clear:both; text-indent:4em; font-size:12px; line-height:30px;}
+
+.tableChoose{ width:100%; border:1px solid #d3d3d3; border-left:none; border-right:none; box-shadow:0 5px 10px #eee; border-collapse:collapse; margin-bottom:45px;}
+.tableChoose thead tr th{ background-color:#8098bc; line-height:20px; color:#fff; font-weight:normal;}
+.tableChoose tr td{ border:1px solid #e6f2f7; height:36px; line-height:36px; color:#666; text-align:center; vertical-align:middle;}
+
+.user_addsevice{ width:auto; margin-top:30px; padding-bottom:10px;}
+.user_addsevice h2{ width:85%; margin:0 auto; line-height:32px;font-weight:normal; font-size:14px; color:#648bcf;}
+.user_addsevice p{ width:80%; margin:0 auto; line-height:28px; font-size:14px;}
+.user_addsevice ul{ width:80%; margin:0 auto; padding:10px 0;}
+.user_addsevice ul li{ width:auto; height:auto!important; height:30px; min-height:30px; line-height:28px; clear:both;}
+.user_addsevice ul li span{ float:left; display:block; line-height:28px; font-size:14px;}
+.user_addsevice ul li .user_addsevicelr{ width:208px; text-align:right; padding-right:10px;}
+.user_addsevice ul li .user_addsevicerl{ width:auto;}
+
+.user_tbdata{ width:70%; margin-left:20%; border:1px solid #d3d3d3; border-left:none; border-right:none; box-shadow:0 5px 10px #eee; border-collapse:collapse; margin-bottom:15px;}
+.user_tbdata thead tr th{ background-color:#8098bc; line-height:20px; color:#fff; font-weight:normal;}
+.user_tbdata tr td{ border:1px solid #e6f2f7; height:36px; line-height:36px; color:#666; text-align:center;}
+.user_tbdata tr td a{ padding:0 5px; color:#648bcf;}
+
+.user_rgupcon{ width:90%; margin:0 auto;}
+.user_rgupcon ul{ padding-top:10px;}
+.user_rgupcon ul li{ width:auto; height:auto!important; height:30px; min-height:30px; line-height:28px; font-size:14px;}
+.user_rgupcon ul li input[type="text"]{ width:120px;}
+.user_rgupcon ul li input[type="button"]{ margin-top:-10px;}
+.user_rgupcon ul li select{ width:150px;}
+
+.user_behvor{ width:90%; margin:0 auto; padding-top:25px;}
+.user_behvor h2{ margin:0; padding:0; line-height:32px; font-weight:normal; font-size:15px; color:#648bcf;}
+.user_behvorcon{ width:auto; padding:10px 0;}
+.user_behvorcon span{ float:left; display:block; height:auto!important; height:30px; min-height:30px; line-height:30px;}
+.user_behvorcon span.user_behvorconf{ width:230px; padding-left:150px;}
+.user_behvorcon span.user_behvorcons{ width:200px;}
+.user_behvorcon font{ position:absolute; left:10px; top:14px; display:block; line-height:0; font-weight:bold;}
+.user_behvorcon h4{ margin:0; padding:0; width:auto; height:32px; line-height:32px; clear:both; position:relative; font-weight:normal; font-size:14px; color:#648bcf;}
+.user_behvorcon ul{ padding:5px 0; position:relative;}
+.user_behvorcon ul font{ line-height:10px;}
+.user_behvorcon ul li{ width:auto; height:32px; line-height:32px; clear:both; font-size:14px;}
+
+/*tab切换*/
+.tab2{ width:100%; height:42px; background-color:#f9f9f9; text-align:center;}
+.tab2 ul{ margin:0; padding:0;}
+.tab2 li{ float:left; width:24.79%; height:42px; line-height:40px; border-left:1px solid #d3d3d3; border-top:1px solid #d3d3d3; cursor:pointer; font-size:14px;}
+.tab2 li.now{ background-color:#ffffff; border-top:2px solid #6a8cd3; font-weight:bold; height:38px !important;}
+.tablist{ width:100%; height:auto!important; height:100px; min-height:100px; font-size:14px; line-height:24px; display:none; padding-top:10px;}
+.block{ display:block;}
+
+.user_avatarset{ width:90%; height:auto!important; height:300px; min-height:300px; margin:0 auto;}
+.user_avatarset h3{ margin:0; padding:0; width:auto; height:36px; line-height:36px; padding-left:30px; font-size:12px; font-weight:normal; position:relative;}
+.user_avatarset h3 input[type="radio"]{ position:absolute; left:8px; top:7px;}
+.user_avasetconta{ width:260px; height:auto!important; height:100px; min-height:100px; margin:10px 0 10px 5%; text-align:center; padding-top:30px; padding-bottom:15px; background-color:#f9f9f9;}
+.user_avasetconta img{ height:100px;}
+.user_avasetcontb{ width:500px; height:auto!important; height:100px; min-height:100px; margin-left:5%;}
+.user_avasetcontb ul{ padding:20px 10px;}
+.user_avasetcontb ul li{ float:left; width:60px; height:55px; text-align:center;}
+.user_avasetcontb ul li img{ width:50px;}
+
+.user_myword{ width:80%; height:auto!important; height:300px; min-height:300px;}
+.user_myword ul{ padding:15px 30px;}
+.user_myword ul li{ float:left; width:200px; height:auto!important; height:40px; min-height:40px;}
+.user_myword ul li input[type="checkbox"]{ display:inline; margin-top:-3px;}
+.user_myword ul li label{ padding-right:15px; padding-left:5px; display:inline}
+
+.user_visuaset{ width:90%; margin-left:5%; height:auto!important; height:40px; min-height:40px; padding:15px 0; font-size:14px;}
+.user_visuaset font{ padding-right:15px; font-size:14px;}
+.user_visuaset span{ padding-left:20px;}
+.user_visuaset span input[type="radio"]{ display:inline; margin-top:-3px;}
+.user_visuaset span label{ padding-right:15px; padding-left:5px; display:inline}
+
+.user_ditribut{ width:auto; height:auto!important; height:40px; min-height:40px; padding:10px 0 10px 30px;}
+.user_ditribut span{ padding-right:20px; font-size:14px;}
+
+.user_share{ width:auto; height:auto!important; height:300px; min-height:300px; clear:both; position:relative;}
+.user_share ul{ padding:30px 0px;}
+.user_share ul li{ width:auto; height:auto!important; height:40px;min-height:40px; clear:both; line-height:40px;}
+.user_share ul li span{ float:left; display:block; padding:0 10px; line-height:32px; white-space:nowrap; font-size:14px;}
+.user_share ul li span.widspan{ width:98px; padding-right:10px; text-align:right;}
+.user_share ul li input[type="text"]{ height:18px; line-height:18px;}
+.user_share ul li input[type="radio"],.user_formtext ul li input[type="checkbox"]{display:inline;margin-top:-2px;}
+.user_share ul li label{ padding-right:15px; padding-left:5px; display:inline;}
+.user_share ul li input.wid80{ width:70px; margin-right:5px;}
+.user_share .user_sharexpla{ position:absolute; right:15px; top:15px; width:300px; height:auto!important; height:100px;min-height:100px; line-height:22px;}
+
+.user_findpsw{ width:80%; margin:0 auto; height:7px; margin-top:100px; margin-bottom:30px;}
+.user_findpsw span{ display:block; float:left; width:140px; height:7px; position:relative; margin-left:-2px; background-color:#ccc;}
+.user_findpsw span.first{border-radius:5px 0 0 5px;}
+.user_findpsw span.last{border-radius:0 5px 5px 0;}
+.user_findpsw span b{ position:absolute; top:-5px; left:60px; display:block; width:20px; height:20px; text-align:center; line-height:20px; background-color:#ccc; border-radius:50px; font-family:"Microsoft Yahei"; font-weight:normal; color:#fff;}
+.user_findpsw span font{ position:absolute; left:0px; bottom:-23px; display:block; width:140px; text-align:center; white-space:nowrap; color:#ccc; font-size:12px; font-weight:normal;}
+.user_findpsw span.selectbg{ background-color:#7abd54; border-radius:5px; z-index:10;}
+.user_findpsw span.selectbg b{ background-color:#7abd54;}
+.user_findpsw span.selectbg font{ color:#7abd54;}
+.user_findpsw span.pastbg{ margin-left:0; background-color:#7abd54; filter:alpha(opacity=60); -moz-opacity:0.6; -khtml-opacity:0.6; opacity:0.6;}
+.user_findpsw span.pastbg b{ background-color:#7abd54;}
+.user_findpsw span.pastbg font{ color:#7abd54;}
+
+.user_findpswinpt{ width:auto; height:auto!important; height:300px; min-height:300px;}
+.user_findpswinpt ul{ padding:40px 10px;}
+.user_findpswinpt ul li{ width:auto; height:auto!important; height:40px; min-height:40px; clear:both; line-height:40px;}
+.user_findpswinpt ul li span{ float:left; display:block; line-height:32px; white-space:nowrap; font-size:14px;}
+.user_findpswinpt ul li span font{ margin-left:15px; color:#333; font-size:12px;}
+.user_findpswinpt ul li span font a{ cursor:pointer; text-decoration:none; color:#005ea7;}
+.user_findpswinpt ul li input[type="text"]{ height:18px; line-height:18px;}
+.user_findpswinpt ul li input[type="button"]{ margin-top:-8px;}
+.user_findpswinpt ul li input.wid90{ width:90px; margin-right:5px;}
+.user_findpswinpt ul li .user_formtextlr{ width:260px; padding-right:10px; text-align:right;}
+.user_findpswinpt ul li .user_formtextrl{ width:auto;}
+
+.user_findpswcom{ width:auto; height:auto!important; height:100px; min-height:100px; position:relative; padding:50px 0 0 300px;}
+.user_findpswcom font{ position:absolute; left:250px; top:85px; font-size:35px; font-weight:bolder; font-family:Verdana, Geneva, sans-serif; color:#7abd54;}
+.user_findpswcom h3{ margin:0; padding:0; font-size:16px; color:#7abd54;}
+.user_findpswcom h5{ margin:0; padding:0; font-size:12px; font-weight:normal;}
+.user_findpswcom h5 a{ color:#06f;}

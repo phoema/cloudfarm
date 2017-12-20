@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- HEAD SECTION -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>我的农场初体验</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link rel="stylesheet" href="./assets/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <!--SLIDER CSS CLASES -->
+    <link rel="stylesheet" href="./assets/css/main-style.css">
+    <link href="./assets/css/farm-one.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!--END HEAD SECTION -->
+<body>
+    <!-- NAV SECTION -->
+    <div class="navbar navbar-default container-fluid" id="nav-bg">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt="" style="height:40px;width:auto;margin-top:-10px"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right" id="nav-li">
+                    <li><a href="index.html">主页</a></li>
+                    <li class="active"><a href="farm.html">云田农场</a></li>
+                    <li><a href="product.html">云田商城</a></li>
+                    <li><a href="charity.html">云田公益</a></li>
+                    <li><a href="space.html">云田空间</a></li>
+                    <li style="display:none" id="per-information"><a href="user.html">个人信息</a></li>
+                    <li id="btn-logout" style="display:none"><a href="#">退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <!--  -->
+   <section class="zhi">
+       <div class="container">
+       <div class="row">
+        <div class="col-xs-3 col-sm-2 col-md-1"> <img src="../assets/img/xiaoer.png" alt="" id="xiaoer"></div>
+        <div class="col-xs-8"><p class="pnotice">田小二：主人！您的庄稼已经翻好土了，抓紧开通农场，选取种子吧！</p class="notice"> </div>
+              
+              
+       </div>
+       <div class="row">
+			<div class="col-md-6">
+           <h4>选取套餐</h4>
+           <div id="pkagelist"> <!-- 套餐列表模板 --></div>    
+			</div>
+			<div class="col-md-6">
+        <div style="margin-bottom:20px">
+           <span id="caifu" class="text-danger">应付财富值:<span id="pkage-score"></span></span>
+          <button class="btn btn-warning"  id="btn-pay" data-toggle="modal" data-target="#myModal">支付</button>
+        </div>
+				<div id="message">
+				   <h4> 套餐详细信息</h4>
+				    <table class="table table-bordered">
+				       <thead>
+				       <tr>
+				           <th>品名</th>
+				           <th>品种</th>
+				           <th>保底产量(kg)</th>
+				           <th>最大产量(kg)</th>
+				       </tr>
+				       </thead>
+				       <tbody  id="pkage-detail-table"></tbody>
+				    </table>
+				</div>
+			</div>
+       </div>
+
+           
+           <!-- 农场图 -->
+           <div class="row">
+                 <div class="farm_bg">
+                 </div>
+           </div>
+
+      </div>
+   </section>
+   <!--  -->
+   <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title">财富值支付</h4>
+        </div>
+        <div class="modal-body">
+            <p class="text-center">该操作会造成一定的付费行为，请谨慎操作！</p>    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消支付</button>
+          <button type="button" class="btn btn-primary" id="pay-sure">确认支付</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+   <!--  -->
+    <footer>
+        <p class="text-center">
+            <span>Copyright &copy; 2016.Cloudfarm Technology All rights reserved.</span>
+        </p>
+    </footer>
+    
+    <script src="./assets/js/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+    <script src="./assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="./assets/js/form.js"></script>
+    <script src="assets/jquery-tmpl/jquery.tmpl.min.js"></script>
+     <script src="assets/js/cloudfarm.js"></script>
+     <!-- 套餐列表模板 -->
+    <script  type="text/x-jquery-tmpl" id="template1">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios${id}" value="${id}" score="${score}" >
+            ${name}：
+            <span id="zhonglei">包含${productlist}</span>
+            <span>种植期：${cycleday}天</span>
+          </label>
+        </div>
+    </script>
+     <!-- 套餐详情模板 -->
+    <script  type="text/x-jquery-tmpl" id="template-detail">
+        <tr>
+            <td>${product.name}</td><td>${product.type}</td><td>${min}</td><td>${max}</td>
+        </tr>
+    </script>
+    
+    <script>
+    var PK_LIST;
+    var API_URL_PKLIST = 'api/pkage/list';
+   // 初始化套餐列表 ready start
+    $(document).ready(function() { 
+        // pkagelist 初始化
+        $.ajax({
+            url: API_URL_PKLIST,
+            contentType: 'application/json',
+            success: function (data) {
+                PK_LIST = data;
+                // 循环套餐列表
+                $.each(data,function(){
+                    var plist = "";
+                    $.each(this.pkage_Product,function(){
+                        plist+=this.product.name+" ";
+                    });
+                    this.productlist=plist;
+                })
+                //套餐列表模板 内容追加
+                $('#template1').tmpl(data).appendTo('#pkagelist');
+                
+                // 选择第一条
+                $("#optionsRadios"+data[0].id).click();
+            },
+            error: function () {
+                   alert('pkagelist error!');
+            }
+        });
+
+    }); // ready end
+    
+   // 套餐点击事件 动态绑定注意写法
+    $("#pkagelist").on('click',':radio', function(){  
+        var pkageid = $(this).val();
+        var pkage = {};
+        for(var i=0;i<PK_LIST.length;i++){
+            if(pkageid == PK_LIST[i].id){
+                pkage = PK_LIST[i];break;
+            }
+            
+        }
+        // 支付积分
+        $("#pkage-score").html(pkage.score);
+        // 保底、最大产量
+        var min="";
+        var max="";
+        for(var i=0;i<pkage.pkage_Product.length;i++){
+            min+=pkage.pkage_Product[i].product.name + pkage.pkage_Product[i].min+"kg ";
+            max+=pkage.pkage_Product[i].product.name + pkage.pkage_Product[i].max+"kg ";
+        }
+        $("#pkage-min").html("您的套餐保底量是" + min);
+        $("#pkage-max").html("您的套餐最大预期产量是" + max);
+        $("#pkage-detail-table").html("");
+        for(var i=0;i<pkage.pkage_Product.length;i++){
+            //套餐列表模板 内容追加
+            $('#template-detail').tmpl(pkage.pkage_Product[i]).appendTo('#pkage-detail-table');
+        }
+ 
+    });//pkagelist click end
+
+   //付款.
+ var json= JSON.parse(sessionStorage.userinfo);
+   $('#pay-sure').click(function(){
+    if(json.scores < Number($('#pkage-score').text())){
+        $('div.modal-body p').text('对不起，您的积分不够，请充值！');
+        return;
+    }
+    var senddata={'userid':json.uid,'pkageid':$('input:checked').val(),'score':$('#pkage-score').text()};
+    $.ajax(
+               {
+                   "type": "post",
+                   //"dataType": "json",
+                   "data": JSON.stringify(senddata),
+                   "contentType": "application/json; charset=utf-8",
+                   "url" : "/api/score/openfarm",
+                   "success": function(data)
+                   {     
+                     $('div.modal-body p').text('支付成功，即将跳转页面！');
+                     setTimeout(function(){
+                       $('div.modal,div.modal-backdrop').hide();
+                       document.location.href='farm.html?id='+data.id;
+                     },3000);
+                      return;
+                   },"error": function(XMLHttpRequest, textStatus, errorThrown )
+                   {     
+                      $('div.modal-body p').text(XMLHttpRequest.responseText);
+                      return;
+                    }
+            });       
+
+   });
+   </script>
+</body>
+</html>

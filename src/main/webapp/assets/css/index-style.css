@@ -1,0 +1,246 @@
+
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+
+
+
+/* ===========================================================
+   GENERAL STYLESHEET BY BYINARY THEME    
+   ============================================================*/
+
+
+body{padding-top:50px;}
+.mt{margin-top:10px;}
+.mr{margin-right:10px;}
+.ml{margin-left:10px;}
+h4{
+    margin-top: 20px;
+}
+.text-center {
+    text-align: center;
+}
+
+
+.main-low-margin {
+    margin-top: 55px;
+}
+
+
+p {
+   
+    text-indent:2rem;
+}
+
+.img-margin-product {
+    margin-top: 30px;
+}
+
+.tab-content {
+    padding-bottom: 60px;
+}
+.navbar{z-index:1502;}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color:transparent;
+}
+.navbar-default .navbar-brand {
+    color:#FFFEFE;
+    font-size: 25px;
+    font-weight: 300;
+}
+.navbar-default {
+    background-color:rgba(60, 118, 61,0.7);
+    border-color:transparent;
+}
+.infor{width:430px;border:1px solid #999;position:absolute;right:50px;top:70px;z-index:1600;padding:20px;background:#D9EDF7;border-radius:10px;}
+.infor .header{font-size:20px;color:#5BB5E9;margin-bottom:20px;}
+@media screen and (max-width: 960px) {
+    .infor{top:120px;}
+}
+@media screen and (max-width: 600px) {
+    .infor{width:100%;right:0;}
+}
+.infor .infor-con .glyphicon{margin-left:20px;font-size:12px;}
+.infor .infor-con .glyphicon:hover{cursor:pointer;}
+.infor .infor-con li{margin-top:10px;}
+   /*-- 主体内容样式 --*/
+section {
+    padding:100px 0;
+}
+section.about-us {
+    background:url(../img/images/blur.jpg) no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size:100% 120%;
+}
+.special-a{
+    background:url(../img/images/green.jpg) no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size:100% 100%;  
+}
+.special-a p,.special-b p,.con-product p{line-height:1.7em;}
+.special-b{
+    background:url(../img/images/rain.jpg) no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size:100% 100%;  
+}
+.special-a img,.special-b img{max-width:400px;height:auto;}
+.special-a img:hover,.special-b img:hover,.con-product img:hover{box-shadow:3px 3px 5px #cdcdcd;}
+.special-a,.special-b{color:#fff;}
+section.about-us h3,.con-product h3{
+    margin: 0;
+    font-size:24px;
+    padding-bottom: 50px;
+    color:#fff;
+}
+section.about-us p {
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+.con-product{
+    background:url(../img/images/sky.jpg) no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size:100% 100%;
+    padding-top:100px;
+    padding-bottom:50px;
+}
+.con-product p,.con-product h4{color:#dedede;}
+
+
+.con-product img{width:100%;height:auto;}
+.con-product .img-circle{border-radius:3%}
+
+/* ===========================================================
+   COMPONENT.CSS  CHANGES   
+   ============================================================*/
+.slideshow nav span.nav-prev, .slideshow nav span.nav-next {
+left: 33%!important;
+
+}
+.slideshow {
+    z-index: 1500!important; 
+}
+.slideshow nav span.nav-close {
+color: #FF0000;
+}
+.slideshow nav span {
+        color: #FF0000;
+    }
+/* ===========================================================
+   SLIDER ADJUSTMENTS (slider.css)  
+   ============================================================*/
+#slides {
+    border:1px dashed #e1e1e1;
+    padding:0px 0px 15px 0px;
+}
+#slides img{width:100%;}
+/* ===========================================================
+   BOOTSTRAP ELEMENTS CHANGES   
+   ============================================================*/
+.navbar {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+/* 登录框部分样式 */
+a.tab-sty{color:#eee;}
+a.tab-sty:hover{color:#333;}
+.contact-form{position:absolute;top:70px;right:100px;z-index:1501;}
+.contact-form .opca-one{opacity:0;}
+.contact-form .opca-two{background:rgba(106,149,102,0.6);border-radius:10px;padding-top:30px;}
+@media screen and (min-width:425px) and (max-width:768px) {
+    .contact-form{position:absolute;width:80%;right:10%;z-index:1501;top:10px;}
+    .container{width:100%;}
+}
+@media screen and (max-width:424px){
+    .contact-form{position:absolute;width:100%;right:0;left:0;z-index:1501;top:10px;}
+    
+}
+
+.foot-copy{padding-top:50px;background:#353A22;color:#dcdcdc;}
+.foot-copy p{text-indent:0;}
+.foot-copy a{color:#dcdcdc;}
+.foot-copy a:hover{color:maroon;}
+.foot-copy .glyphicon{line-height:10px;}
+/*模态狂*/
+.modal{position:fixed;top:0;left:0;right:0;bottom:0;z-index:1600;}
+.portfolio-modal .modal-content {
+    padding: 10px 0 35px;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color:#fff;
+}
+.portfolio-modal .modal-content img {
+    margin:0 0 30px;
+    width:100%;
+}
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+    display:block;
+    z-index:9999;
+}
+.portfolio-modal .close-modal:hover {
+    opacity: .7;
+}
+.modal-content {
+    background-color:rgba(15, 29, 1, 0.7);
+}
+.portfolio-modal .close-modal .lr {
+    z-index: 4051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 4052;
+    width: 1px;
+    height: 75px;
+    background-color: #fff;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+/*person information================================*/
+@media screen and (min-width: 350px) and (max-width:780px) {
+    .con-product img{width:80%;margin-left:10%;}
+    img.img-res{width:100%;}
+
+}
+
+ img.img-res{width:100%;}
+.posi-h2{position:absolute;left:20%;top:20%;color:#fff;} 
+
+     @media (max-width: 767px) {
+        h1{font-size:28px;} 
+
+    }
+a.oline{outline:none;}
+.modal-body p{line-height:1.7em;}
+#mypage span{padding-top:10px;}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD Table</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.css">
+     <link rel="stylesheet" href="../assets/bootstrap-table/src/bootstrap-table.css">
+    <style>
+        .update {
+            color: #333;
+            margin-right: 5px;
+        }
+        .remove {
+            color: red;
+            margin-left: 5px;
+        }
+        .alert {
+            padding: 0 14px;
+            margin-bottom: 0;
+            display: inline-block;
+        }
+    </style>
+    <script src="../assets/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.js"></script>
+    <script src="../assets/bootstrap-table/src/bootstrap-table.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD Table</h1>
+        <p class="toolbar">
+            <a class="create btn btn-default" href="javascript:">新增</a>
+            <span class="alert"></span>
+        </p>
+        <table id="table"
+               data-show-refresh="true"
+               data-show-columns="true"
+               data-search="true"
+               data-query-params="queryParams"
+               data-toolbar=".toolbar">
+            <thead>
+            <tr>
+                <th data-field="name">Name</th>
+                <th data-field="username">username</th>
+                <th data-field="state">state</th>
+                <th data-field="scores">scores</th>
+                <th data-field="action"
+                    data-align="center"
+                    data-formatter="actionFormatter"
+                    data-events="actionEvents">操作</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+
+    <div id="modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="uid"> 
+
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label>username</label>
+                        <input type="text" class="form-control" name="username" placeholder="username">
+                    </div>
+                    <div class="form-group">
+                        <label>password</label>
+                        <input type="text" class="form-control" name="password" placeholder="password">
+                    </div>
+                    <div class="form-group">
+                        <label>password2</label>
+                        <input type="text" class="form-control" name="password2" placeholder="password2">
+                    </div>
+                    <div class="form-group">
+                        <label>state</label>
+                        <input type="text" class="form-control" name="state" placeholder="state">
+                    </div>
+                    <div class="form-group">
+                        <label>scores</label>
+                        <input type="number" class="form-control" name="scores" placeholder="scores">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary submit">Submit</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+<script>
+
+    var API_URL = '../api/user/list';
+    var API_URL_SAVE = 'http://localhost:8080/api/user/save';
+    var API_URL_DEL = 'http://localhost:8080/api/user/delete?uid=';
+var bootdata = [{"uid":1,"username":"admin","name":"管理员","salt":"8d78869f470951332959580424d4bf4f","state":0,"scores":110,"roleList":[{"id":1,"role":"admin","description":"管理员","available":true,"permissions":[{"id":1,"name":"用户管理","resourceType":"menu","url":"user_info/userList","permission":"user_info:view","parentId":0,"parentIds":"0/","available":true},{"id":2,"name":"用户添加","resourceType":"button","url":"user_info/userAdd","permission":"user_info:add","parentId":1,"parentIds":"0/1","available":true}]},{"id":2,"role":"vip","description":"VIP会员","available":true,"permissions":[]}],"credentialsSalt":"admin8d78869f470951332959580424d4bf4f"},{"uid":2,"username":"jiahh","state":0,"scores":0,"roleList":[],"credentialsSalt":"jiahhnull"},{"uid":4,"username":"username","name":"jiahh","state":0,"scores":0,"roleList":[],"credentialsSalt":"usernamenull"}];
+    var $table = $('#table').bootstrapTable({url: API_URL}),
+        $modal = $('#modal').modal({show: false}),
+        $alert = $('.alert').hide();
+
+    $(function () {
+        // create event
+        $('.create').click(function () {
+            showModal($(this).text());
+        });
+
+        $modal.find('.submit').click(function () {
+            var row = {};
+
+            $modal.find('input[name]').each(function () {
+                row[$(this).attr('name')] = $(this).val();
+            });
+
+            $.ajax({
+                url: API_URL_SAVE,
+                type: $modal.data('id') ? 'put' : 'post',
+                contentType: 'application/json',
+                data: JSON.stringify(row),
+                success: function () {
+                    $modal.modal('hide');
+                    $table.bootstrapTable('refresh');
+                    showAlert(($modal.data('id') ? 'Update' : 'Create') + ' item successful!', 'success');
+                },
+                error: function () {
+                    $modal.modal('hide');
+                    showAlert(($modal.data('id') ? 'Update' : 'Create') + ' item error!', 'danger');
+                }
+            });
+        });
+    });
+
+    function queryParams(params) {
+        return {};
+    }
+
+    function actionFormatter(value) {
+        return [
+            '<a class="update" href="javascript:" title="修改"><i class="glyphicon glyphicon-edit"></i></a>',
+            '<a class="remove" href="javascript:" title="删除"><i class="glyphicon glyphicon-remove-circle"></i></a>',
+        ].join('');
+    }
+
+    // update and delete events
+    window.actionEvents = {
+        'click .update': function (e, value, row) {
+            showModal($(this).attr('title'), row);
+        },
+        'click .remove': function (e, value, row) {
+            if (confirm('确定删除此条数据吗?')) {
+                $.ajax({
+                    url: API_URL_DEL + row.id,
+                    type: 'delete',
+                    success: function () {
+                        $table.bootstrapTable('refresh');
+                        showAlert('删除数据成功!', 'success');
+                    },
+                    error: function () {
+                        showAlert('删除数据失败!', 'danger');
+                    }
+                })
+            }
+        }
+    };
+
+    function showModal(title, row) {
+        row = row || {
+            id: '',
+            name: '',
+            stargazers_count: 0,
+            forks_count: 0,
+            description: ''
+        }; // default row value
+
+        $modal.data('id', row.id);
+        $modal.find('.modal-title').text(title);
+        for (var name in row) {
+            $modal.find('input[name="' + name + '"]').val(row[name]);
+        }
+        $modal.modal('show');
+    }
+
+    function showAlert(title, type) {
+        $alert.attr('class', 'alert alert-' + type || 'success')
+              .html('<i class="glyphicon glyphicon-check"></i> ' + title).show();
+        setTimeout(function () {
+            $alert.hide();
+        }, 3000);
+    }
+</script>
+</body>
+</html>

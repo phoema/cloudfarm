@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Registration Page</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/css/AdminLTE.min.css">
+<script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.js"></script>
+
+</head>
+<body class="hold-transition register-page">
+<div class="register-box">
+  <div class="register-logo">
+    <a href="../../index2.html"><b>Admin</b>LTE</a>
+  </div>
+
+  <div class="register-box-body">
+    <p class="login-box-msg">Register a new membership</p>
+
+    <form action="" method="post">
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="name"  id="name" value="jiahh">
+      </div>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" placeholder="username" id="username" value="username">
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" placeholder="Password" id="password" value="password">
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" placeholder="Retype password" id="password2"  value="password">
+      </div>
+      <div class="row">
+        <div class="col-xs-8">
+          <div class="checkbox icheck">
+            <label>
+              
+            </label>
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-4">
+          <button type="button" id="btn-register" class="btn btn-primary btn-block btn-flat">Register</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+    
+  </div>
+  <!-- /.form-box -->
+</div>
+<!-- /.register-box -->
+<script>
+$('#btn-register').click(function(){
+	var senddata =  { "username": "JIAHH", "password": "123456" , "password2": "123456" };
+	senddata =  { "name": $("#name").val(),"username": $("#username").val(), "password": $("#password").val() , "password2": $("#password2").val()  };
+	  //$.getJSON("/api/user/save", senddata,
+		//	   function(data){
+		//	     alert("Data Loaded: " + data);
+		//	   });
+ 
+
+	  $.ajax(
+              {
+                  "type": "post",
+                  //"dataType": "json",
+                  "data": JSON.stringify(senddata),
+                  "contentType": "application/json; charset=utf-8",
+                  "url" : "/api/user/save",
+                  "success": function(data)
+                  {     
+                	  alert("Data Loaded: " + data);
+                  },"error": function(XMLHttpRequest, textStatus, errorThrown )
+                  {     
+                	  alert("Data Loaded: " + XMLHttpRequest.responseText);
+                  }
+               });
+	  
+	  
+  });
+</script>
+</body>
+</html>

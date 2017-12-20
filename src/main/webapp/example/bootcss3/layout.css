@@ -1,0 +1,317 @@
+@media screen and (min-width:320px){html{font-size:5.5px;}}
+@media screen and (min-width:320px){html{font-size:5.5px;}}
+@media screen and (min-width:320px){html{font-size:5.5px;}}
+@media screen and (min-width:346px){html{font-size:6px;}}
+@media screen and (min-width:352px){html{font-size:6.5px;}}
+@media screen and (min-width:400px){html{font-size:7px;}}
+@media screen and (min-width:480px){html{font-size:7.5px;}}
+/*@media screen and (min-width:560px){html{font-size:4.5px;}}
+@media screen and (min-width:640px){html{font-size:8px;}}*/
+
+@media screen and (min-width:480px) and (max-width:639px){ html{ font-size:7.5px}}
+@media screen and (min-width:640px) and (max-width:719px){ html{ font-size:8px}}
+@media screen and (min-width:720px) and (max-width:749px){ html{ font-size:8.5px}}
+@media screen and (min-width:750px) and (max-width:799px){ html{ font-size:9px}}
+@media screen and (min-width:800px) and (max-width:959px){ html{ font-size:9.5px}}
+@media screen and (min-width:960px) and (max-width:1079px){ html{ font-size:10px}}
+@media screen and (min-width:1080px){ html{ font-size:10.5px}}
+
+.clearboth{clear:both;font-size:1px;width:1px;height:0;visibility:hidden;margin-top:0px!important;*margin-top:-1px;line-height:0}
+
+.WidthHeight100P{
+    width: 100%;
+    height: 100%;
+}
+.Width100P{
+    width: 100%;
+}
+.Width20P{
+    width: 20%;
+}
+.Width25P{
+    width: 24.3%;
+}
+.Height100P{
+    height: 100%;
+}
+.lineHeight100P{
+    line-height: 100%;
+}
+.ver_alignTop
+{
+    vertical-align: top;
+}
+.ver_alignMid
+{
+    vertical-align: middle;
+}
+.ver_alignBtm
+{
+    vertical-align: bottom;
+}
+.displayNone
+{
+    display: none;
+}
+.displayInline
+{
+    display: inline-block;
+}
+.displayTable{
+    display: table;
+}
+.displayTableCell{
+    display: table-cell;
+}
+.displayBlock
+{
+    display: block;
+}
+.floatLeft{
+    float:left;
+}
+.floatRight{
+    float: right;
+}
+.positionAbsolute{
+    position: absolute;
+}
+.positionRelative{
+    position: relative;
+}
+.absoluteLeftTop{
+    top: 0px;
+    left: 0px;
+}
+.absoluteRightTop{
+    right: 0px;
+    top: 0px;
+}
+.absoluteRightBottom{
+    right: 0px;
+    bottom: 0px;
+}
+.absoluteLeftBottom{
+    left: 0px;
+    bottom: 0px;
+}
+.bkPositionRightCenter{
+    background-position: right center;
+}
+.bkPositionLeftCenter{
+    background-position: left center;
+}
+.zIndex_layer{
+    z-index: 1;
+}
+.zIndex_floatWnd{
+    z-index: 2;
+}
+.zIndex_floatWndAbsoluteNode{
+    z-index: 3;
+}
+.textAlignLeft{
+    text-align: left;
+}
+.text-AlignRight{
+    text-align: right;
+}
+.textAlignCenter{
+    text-align: center;
+}
+.height25{
+    height:25px;
+    line-height: 25px;
+}
+.height30{
+    height:30px;
+    line-height: 30px;
+}
+.height35{
+    height:35px;
+    line-height: 35px;
+}
+.height40{
+    height:40px;
+    line-height: 40px;
+}
+.height50{
+    height:50px;
+    line-height: 50px;
+}
+.padding0{
+    padding: 0px;
+}
+.padding5{
+    padding: 5px;
+}
+.padding10{
+    padding: 10px;
+}
+.padding20{
+    padding: 20px;
+}
+.paddingRight10{
+    padding-right: 10px;
+}
+.margin5{
+    margin: 5px;
+}
+.margin8{
+    margin: 8px;
+}
+.margin10{
+    margin: 10px;
+}
+.margin20{
+    margin: 20px;
+}
+.marginLeft1
+{
+    margin-left: 1px;
+}
+.marginLeft5
+{
+    margin-left: 5px;
+}
+.marginLeft10
+{
+    margin-left: 10px;
+}
+.marginLeft15
+{
+    margin-left: 15px;
+}
+.marginLeft20
+{
+    margin-left: 20px;
+}
+.marginLeft25
+{
+    margin-left: 25px;
+}
+.marginLeft30
+{
+    margin-left: 30px;
+}
+.marginLeft40
+{
+    margin-left: 40px;
+}
+.marginLeft50
+{
+    margin-left: 50px;
+}
+.marginRight10
+{
+    margin-right: 10px;
+}
+.marginRight5
+{
+    margin-right: 5px;
+}
+.marginRight15
+{
+    margin-right: 15px;
+}
+.marginRight20
+{
+    margin-right: 20px;
+}
+.marginRight30
+{
+    margin-right: 30px;
+}
+.marginRight40
+{
+    margin-right: 40px;
+}
+.marginTop5{
+    margin-top: 5px;
+}
+.marginTop7{
+    margin-top: 7px;
+}
+.marginTop10{
+    margin-top: 10px;
+}
+.marginTop12{
+    margin-top: 12px;
+}
+.marginTop15{
+    margin-top: 15px;
+}
+.marginTop30{
+    margin-top: 30px;
+}
+.marginTop20{
+    margin-top: 20px;
+}
+.marginTop40{
+    margin-top: 40px;
+}
+.marginTop102{
+    margin-top: 102px;
+}
+.marginBottom5{
+    margin-bottom: 5px;
+}
+.marginBottom10{
+    margin-bottom: 10px;
+}
+.marginBottom15{
+    margin-bottom: 15px;
+}
+.marginBottom20{
+    margin-bottom: 20px;
+}
+.marginBottom30{
+    margin-bottom: 30px;
+}
+.marginTopBottom10{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.marginLeftRight10{
+    margin-left:10px;
+    margin-right:10px;
+}
+.marginLeftRight5{
+    margin-left:5px;
+    margin-right:5px;
+}
+.overflowAuto{
+    overflow: auto;
+}
+.overflowHidden{
+    overflow: hidden;
+}
+
+/*----------布局-------------*/
+.layout1{
+    width: 90%;
+    margin:10px auto;
+}
+.layout2{
+    width: 90%;
+    margin:0px auto 10px;
+}
+
+.btntexta{ border:none; background:none; width:auto; height:25px; line-height:25px; color:#FFF; text-align:center; padding:0 3px; background-color:#648bcf;}
+.btntextalink:hover{ text-decoration:none}
+
+.cursorp{ cursor:pointer;}
+
+.patentfontword{ word-break:break-all; word-wrap:break-word; line-height:20px;}
+.patentdtword td{ word-break:break-all; word-wrap:break-word; line-height:20px;}
+
+/*error jsp*/
+.errorwrap{ width:89.89%; margin:0 auto; background-color:#fff; margin-top:20px; padding-top:50px; font-family:Microsoft YaHei;}
+.errorwrap h2{ margin:0 30px; width:auto; height:34px; line-height:34px; border-bottom:2px solid #00aeef; font-weight:normal;}
+.errorwrap h2 span{ display:block; width:60px; padding:0 10px 0 40px; height:34px; line-height:34px; background:url(../../img/public/errormin.png) 5px 0px no-repeat; border-bottom:2px solid #005aab; color:#e68e30; font-size:22px;}
+.errorwrapcon{ width:70%; margin:0 auto; padding:110px 0;}
+.errorwrapcon p{ line-height:30px; margin-bottom:50px; color:#0465b9; font-size:20px;}
+.errorwrapcon h3{ width:auto; margin-top:20px; text-align:right;}
+.errorwrapcon h3 a{ display:block; float:right; height:32px; line-height:32px; text-align:center; padding:0 30px; background-color:#5882cb; border-right:1px solid #fff; color:#fff; font-weight:normal; font-size:16px;}
+.errorwrapcon h3 a:hover{ text-decoration:none; background-color:#c56ab6;}
+

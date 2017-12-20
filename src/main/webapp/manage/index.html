@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- HEAD SECTION -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>用户界面数据</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+
+    <link rel="stylesheet" href="../assets/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-table/src/bootstrap-table.css">
+    <link rel="stylesheet" href="../assets/css/adm.css">
+    <link rel="stylesheet" href="../assets/css/skin-blue.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+   
+</head>
+<body class="hold-transition skin-blue">
+<!--======================  -->
+    <div class="wrapper">
+
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="" class="logo">
+          <img src="../assets/img/logo.png" alt="" style="height:50px;width:auto">
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="glyphicon glyphicon-th-list"></span>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="navbar-custom-menu pull-left">
+            <ul class="nav navbar-nav ">
+             <!-- 水平导航栏目录 -->
+               <li><a href="">cloudfarm后台管理</a></li>
+               <li><a href=""></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+           <a href="#" style="font-size:20px;padding-left:30px">目录</a>
+          </div>
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+            <li class="active"><a href="index.html"><i class="fa fa-circle-o text-yellow"></i> <span>用户管理</span></a></li>
+            <li><a href="farm.html"><i class="fa fa-table"></i><span>农田管理</span></a></li>
+            <li class=""><a href="stock.html"><i class="fa fa-table"></i><span>仓库管理</span></a> </li>
+            <li><a href="score.html"><i class="fa fa-table"></i><span>积分管理</span></a></li>
+             <li><a href="send.html"><i class="fa fa-table"></i><span>配送管理</span></a></li>
+            <li><a href="pkage.html"><i class="fa fa-table"></i><span>套餐管理</span></a></li>
+            <li><a href="product.html"><i class="fa fa-circle-o text-red"></i> <span>产品管理</span></a></li>
+             <li><a href="article.html"><i class="fa fa-circle-o text-red"></i> <span>文章管理</span></a></li>
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+      
+        <p class="toolbar">
+            <a class="create btn btn-primary" href="javascript:">新增</a>
+            <span id="alert" class="alert"></span>
+        </p>
+        <table id="table"
+               data-show-refresh="true"
+               data-show-columns="true"
+               data-search="true"
+               data-query-params="queryParams"
+               data-unique-id="uid"
+               data-pagination="true"
+               data-toolbar=".toolbar">
+            <thead>
+            <tr>
+                <th data-align="center" data-formatter="fnIndex">序号</th>
+                <th data-field="username" data-sortable="true">用户名</th>
+                <th data-field="name" data-sortable="true">姓名</th>
+                <th data-field="email" data-sortable="true">邮箱</th>
+                <th data-field="password">密码</th>
+                <th data-field="scores" data-sortable="true">积分</th>
+                <th data-field="action"
+                    data-align="center"
+                    data-formatter="actionFormatter"
+                    data-events="actionEvents">操作</th>
+            </tr>
+            </thead>
+        </table>
+       <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+    </div>
+    <!-- 模态狂 -->
+   <div id="modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="uid"> 
+                     <div class="form-group">
+                        <label>用户名</label>
+                        <input type="text" class="form-control" name="username" >
+                    </div>
+                    <div class="form-group">
+                        <label>姓名</label>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                   
+                    <div class="form-group">
+                        <label>邮箱</label>
+                        <input type="text" class="form-control" name="email" >
+                    </div>
+                    <div class="form-group">
+                        <label>密码</label>
+                        <input type="text" class="form-control" name="password" >
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary submit">确定</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+ <!-- ========================= -->
+    <script src="../assets/js/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+    <script src="../assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap-table/src/bootstrap-table.js"></script>
+    <script src="../assets/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+   
+   <script>
+    var API_URL = '../api/user/list';
+    var API_URL_SAVE = '../api/user/save';
+    var API_URL_DEL = '../api/user/delete?uid=';
+    //var bootdata = [{"uid":1,"username":"admin","name":"管理员","salt":"8d78869f470951332959580424d4bf4f","state":0,"scores":110,"roleList":[{"id":1,"role":"admin","description":"管理员","available":true,"permissions":[{"id":1,"name":"用户管理","resourceType":"menu","url":"user_info/userList","permission":"user_info:view","parentId":0,"parentIds":"0/","available":true},{"id":2,"name":"用户添加","resourceType":"button","url":"user_info/userAdd","permission":"user_info:add","parentId":1,"parentIds":"0/1","available":true}]},{"id":2,"role":"vip","description":"VIP会员","available":true,"permissions":[]}],"credentialsSalt":"admin8d78869f470951332959580424d4bf4f"},{"uid":2,"username":"jiahh","state":0,"scores":0,"roleList":[],"credentialsSalt":"jiahhnull"},{"uid":4,"username":"username","name":"jiahh","state":0,"scores":0,"roleList":[],"credentialsSalt":"usernamenull"}];
+    var $table = $('#table').bootstrapTable({url: API_URL}),
+        $modal = $('#modal').modal({show: false}),
+        $alert = $('#alert').hide();
+
+    $(document).ready(function() { 
+        
+        // create event
+        $('.create').click(function () {
+            showModal($(this).text());
+        });
+
+        $modal.find('.submit').click(function () {
+            var row = {};
+            if($modal.data('id')){
+                row = $table.bootstrapTable('getRowByUniqueId', $modal.data('id'));
+            }
+            $modal.find('.form-control').each(function () {
+                row[$(this).attr('name')] = $(this).val();
+            });
+            //row["pkageid"] = $("#pkagelist").val();
+            // 更新
+            $.ajax({
+                url: API_URL_SAVE,
+                type: 'post',
+                contentType: 'application/json',
+                data: JSON.stringify(row),
+                success: function () {
+                    $modal.modal('hide');
+                    $table.bootstrapTable('refresh');
+                    showAlert(($modal.data('id') ? 'Update' : 'Create') + ' item successful!', 'success');
+                },
+                error: function () {
+                    $modal.modal('hide');
+                    showAlert(($modal.data('id') ? 'Update' : 'Create') + ' item error!', 'danger');
+                }
+            });
+        });
+    }); 
+
+
+    function queryParams(params) {
+        return {};
+    }
+    function fnIndex(value,row,index){
+        return index+1;
+    }
+        
+
+    function actionFormatter(value,row,index) {
+        return [
+            '<a class="update" href="javascript:" title="修改"><i class="glyphicon glyphicon-edit"></i></a>',
+            '<a class="remove" href="javascript:" title="删除"><i class="glyphicon glyphicon-remove-circle"></i></a>',
+        ].join('');
+    }
+
+    // update and delete events
+    window.actionEvents = {
+        'click .update': function (e, value, row) {
+            showModal($(this).attr('title'), row);
+        },
+        'click .remove': function (e, value, row) {
+            if (confirm('确定删除此条数据吗?')) {
+                $.ajax({
+                    url: API_URL_DEL + row.uid,
+                    type: 'post',
+                    success: function () {
+                        $table.bootstrapTable('refresh');
+                        showAlert('删除数据成功!', 'success');
+                    },
+                    error: function (error) {
+                        showAlert('删除数据失败!', 'danger');
+                    }
+                })
+            }
+        }
+    };
+
+    // 显示浮层
+    function showModal(title, row) {
+        row = row || {
+            id: '',
+            name: '',
+            stargazers_count: 0,
+            forks_count: 0,
+            description: ''
+        }; // default row value
+
+        $modal.data('id', row.uid);
+        $modal.find('.modal-title').text(title);
+        for (var name in row) {
+            $modal.find('[name="' + name + '"]').val(row[name]);
+        }
+        $modal.modal('show');
+    }
+    // 显示消息
+    function showAlert(title, type) {
+        $alert.attr('class', 'alert alert-' + type || 'success')
+              .html('<i class="glyphicon glyphicon-check"></i> ' + title).show();
+        setTimeout(function () {
+            $alert.hide();
+        }, 3000);
+    }
+    
+    
+</script>
+</body>
+</html>

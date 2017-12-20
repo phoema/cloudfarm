@@ -1,0 +1,61 @@
+
+#message p{line-height:24px;}
+#xiaoer{width:70px;height:auto;margin-right:30px;}
+p.pnotice{margin-top:30px;text-indent:2rem;line-height:1.7rem}
+footer{ background:#475025;color:#dcdcdc;padding-top:10px;padding-bottom:5px;}
+div.farm_bg{
+	margin-top:20px;
+     background:url(../img/farm/free.jpg) no-repeat;
+    background-position:center;
+    background-size:100% 100%;
+    position:relative;
+    height:550px;
+    margin-bottom:30px;
+    border:5px solid #F0C991;
+    -webkit-box-shadow:3px 3px 10px #999;
+    -moz-box-shadow:3px 3px 10px #999;
+    box-shadow:3px 3px 10px #999;
+}
+div.navbar{margin-bottom:0;}
+section.zhi{background:url(../img/farm/timg.jpg) no-repeat;
+    background-position:center;
+    background-size:100% 100%;padding-top:10px;padding-bottom:10px;}
+/*公告栏按钮样式*/
+/*#gonggao .qian p:first-child{text-align:center;margin-top:10px;}
+p#timer{text-indent:2em;line-height:20px;padding-left:5px;padding-right:5px;}
+.bor{width:201px;height:100px;border-radius:5px;margin-bottom:20px;}
+.qian{width:198px;height:98px;border-radius:5px;font-weight:500;}
+.bor1{border:1px solid #98B072;}
+.qian1{background:-webkit-linear-gradient(to bottom,#C7E085,#ACCB6E);color:#6F8030;border:1px solid #D5F29E;background:-moz-linear-gradient(to bottom,#C7E085,#ACCB6E);color:#6F8030;border:1px solid #D5F29E;background:-o-linear-gradient(to bottom,#C7E085,#ACCB6E);color:#6F8030;border:1px solid #D5F29E;background:linear-gradient(to bottom,#C7E085,#ACCB6E);color:#6F8030;border:1px solid #D5F29E;}*/
+@media screen and (max-width:768px) {
+	.bor{width:100%;height:100px;}
+	.qian{width:100%;height:98px;}
+    div.farm_bg{border:none;}
+
+}
+@media screen and (min-width:1200px) {
+	div.farm_bg{ border:10px solid #F0C991;height:600px;background-size:100% auto;}
+}
+@media screen and (min-width:960px) and (max-width:1199px) {
+	div.farm_bg{background-size:100% 100%;height:350px;}
+}
+@media screen and (min-width:510px) and (max-width:768px) {
+     div.farm_bg{height:400px;}
+
+}
+@media screen and (max-width:500px) {
+	 div.farm_bg{height:300px;}
+     #xiaoer{display:block;}
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    body{padding-top:100px}
+    }
+      
+}
+.mt{margin-top:10px;}
+.mr{margin-right:10%;}
+#zhonglei{margin-right:30px;}
+h3{margin-top:40px;}
+.alert{width:80%;margin-left:10%;display:none;margin-top:5%;}
+.modal{top:20%;}
+#pkage-score{padding-right:20px;}

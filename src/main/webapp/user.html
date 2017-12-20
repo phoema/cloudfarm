@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- HEAD SECTION -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>我的仓库</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link rel="stylesheet" href="./assets/bootstrap-3.3.7/css/bootstrap.min.css">
+    <!--SLIDER CSS CLASES -->
+    <!--CUSTOM STYLE -->
+    <link rel="stylesheet" href="./assets/css/main-style.css">
+    <link href="./assets/css/stock.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/bootstrap-table/src/bootstrap-table.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!--END HEAD SECTION -->
+<body style="min-height:1000px">
+    <!-- NAV SECTION -->
+    <div class="navbar navbar-default container-fluid">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt="" style="height:40px;width:auto;margin-top:-10px"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right" id="nav-li">
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="farm.html">云田农场</a></li>
+                    <li><a href="product.html">云田商城</a></li>
+                    <li><a href="charity.html">云田公益</a></li>
+                    <li><a href="space.html">云创空间</a></li>
+                    <li style="display:none" id="per-information"  class="active"><a href="user.html">个人信息</a></li>
+                    <li id="btn-logout" style="display:none"><a href="#">退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+               <div id="user-info" class="infor">
+                <div class="header"><h3>个人信息</h3>
+                </div>
+                <div class="infor-con">
+                  <ul>
+                    <li>帐号 : <span id="infor-username"></span></li>
+                    <li><div>邮箱 : <span id="infor-email"></span><span class="glyphicon glyphicon-pencil" id="myemail"></span></div>
+                        <div name="div-address" class="form-inline" style="display:none">
+                           邮箱：<input  type="text" class="form-control" placeholder="请输入邮箱">
+                           <button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-ok"></button>
+                           <button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-remove"></button>
+                      </div>
+                    </li>
+                    <li><div>昵称 : <span id="infor-name"></span><span class="glyphicon glyphicon-pencil" id="myname"></span></div>
+                        <div name="div-address" class="form-inline" style="display:none">
+                           昵称：<input  type="text" class="form-control" placeholder="请输入您的昵称">
+                           <button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-ok"></button>
+                           <button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-remove"></button>
+                      </div>
+                    </li>
+                     <li><div>密码 : <span id="infor-pwd">********</span><span class="glyphicon glyphicon-pencil" id="mypwd"></span></div>
+                          <div name="div-address" class="form-inline" style="display:none">
+                          密码： <input  type="text" class="form-control" placeholder="请输入原密码">
+                           <input  type="text" class="form-control" placeholder="请输入新密码">
+                           <input  type="text" class="form-control leftpadding" placeholder="请输入新密码">
+                           <button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-ok"></button>
+                           <button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-remove"></button>
+                      </div>
+                     </li>
+                  </ul>
+                </div>
+              </div>
+             </div>
+        </div>
+       </div>
+    <!-- 列表详情 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h3>我的积分&nbsp&nbsp&nbsp&nbsp<small id="infor-score" style="color:red"></small></h3>
+            <table class="table table-hover" id="score-table" data-unique-id="id"
+               data-pagination="true">
+                 <thead>
+                        <tr>
+                            <th  data-field="name" data-sortable="true">活动名称</th>
+                            <th  data-field="score" data-sortable="true">积分变更</th>
+                            <th  data-field="createday" data-sortable="true">操作时间</th>
+                        </tr>
+                    </thead>
+            </table>
+        </div>
+      </div>
+    </div>
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <table class="table table-hover">
+                   
+                    <div class="page-header">
+                      <h3>我的仓库</h3>
+                    </div>
+                 
+                    <thead>
+                        <tr>
+                            <th>品种</th>
+                            <th>型号</th>
+                            <th>库房库存</th>
+                            <th>配送数量(单位：kg)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row" style="margin-top:30px">
+            <div class="col-sm-10 col-sm-offset-1">
+                <span class="text-bg">常用配送信息</span><span class="glyphicon glyphicon-plus"></span>
+                <div class="address-list" id="address-list"> 
+
+                </div>
+                
+                <div class="pull-right">
+                     <button type="button" class="btn btn-primary" id="send-to">配送</button>
+                     <button type="button" class="btn btn-default" id="send-reset">重置</button>
+                </div>   
+            </div> 
+        </div>
+       <div class="row">
+         <div class="col-sm-10 col-sm-offset-1">
+           <div><h3>配送记录</h3></div>
+           <div>
+            <table class="table table-hover" id="send-table" data-unique-id="id"
+               data-pagination="true">
+              <thead>
+                <tr>
+                  <th data-field="address" data-sortable="true">配送地址</th>
+                  <th data-field="stock" data-sortable="true">配送数量</th>
+                  <th data-field="createtime" data-sortable="true">配送时间</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+         </div>
+       </div>
+    </section>
+    <!-- 列表详情 -->
+    <!--END NAV SECTION -->
+       <footer>
+         <div class="container">
+           <p class="text-center">
+             Copyright &copy; 2016.Cloudfarm Technology All rights reserved.
+           </p>
+         </div>
+       </footer>
+    <!--  -->
+    <script src="./assets/js/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+    <script src="./assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="./assets/jquery-tmpl/jquery.tmpl.js"></script>
+     <script src="./assets/bootstrap-table/src/bootstrap-table.js"></script>
+    <script src="./assets/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="./assets/js/cloudfarm.js"></script>
+     <!-- 套餐列表模板 -->
+    <script  type="text/x-jquery-tmpl" id="template-address">
+        <div class="radio">
+          <label name="lbl-address">
+            <input type="radio" name="optionsRadios" value="${id}">
+            <span class="radio-add">${address}</span>
+            <span name="span-pen" class="glyphicon glyphicon-pencil"></span>
+            <span name="span-remove" class="glyphicon glyphicon-remove"></span>
+          </label>
+          <div name="div-address" class="form-inline" style="display:none">
+               <input  type="text" class="form-control" placeholder="请输入地址">
+               <button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-ok"></button>
+               <button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-remove"></button>
+          </div>
+          </div>
+    </script>
+    <script  type="text/x-jquery-tmpl" id="template-stock">
+    <tr>
+        <td style="display:none" name="productid">${productid}</td>
+        <td name="name">${name}</td>
+        <td name="type">${type}</td>
+        <td name="stock">${stock}</td>
+        <td><div class="row form-inline"><input type="text" name="thisstock" class="form-control input-sm" value="0"><span></span></div></td>
+    </tr>
+    </script>
+ 
+ 
+    <script>
+
+    //ready start   
+    $(document).ready(function() { 
+        var user =sessionStorage.getItem("userinfo");
+        if(user){
+            user = JSON.parse(user);
+            $('#per-information').show().find('a').text(user['name']);
+            $('#infor-name').text(user.name);
+            $('#infor-username').text(user.username);
+            $('#infor-email').text(user.email);
+            $('#infor-score').text(user.scores);
+
+            var uid = user.uid;
+            buildStockList(uid);
+            buildAddressList(uid);
+
+           //积分列表
+            var API_URL = '../api/score/list';
+            $('#score-table').bootstrapTable({url: API_URL});
+
+            //配送记录
+            var API_NOTE='/api/send/getbyuserid?uid='+user.uid;
+            $('#send-table').bootstrapTable({url: API_NOTE});
+           //
+        }else{
+            alert("用户没有登录");
+        }
+
+    }); // ready end
+    var user=JSON.parse(sessionStorage.getItem("userinfo"));
+       //修改配送地址信息
+       $("#address-list").on("click","span.glyphicon-pencil",function(){
+            $(this).parent().hide();
+            $(this).parent().next('.form-inline').show();
+             var address=$(this).prev().text();
+            $(this).parent().next().find('input').val(address);
+
+        });
+        //确认修改
+       $("#address-list").on("click","button.glyphicon-ok",function(){
+       //$('button.glyphicon-ok').click(function(){
+           var okbtn = $(this);
+            if($(this).prev().val().length==0){
+                $(this).prev().prop('placeholder','不能为空');
+                return;
+            }
+            var address=$(this).prev().val();
+            var addressid = $(this).parent().parent().find("[name='optionsRadios']").val();
+            var userid = sessionStorage.getItem("userinfo").uid;
+            var data = {"address" : address};
+            if(addressid) data.id=addressid;
+               $.ajax(
+                  {
+                      "type": "post",
+                      //"dataType": "json",
+                      "data": JSON.stringify(data),
+                      "contentType": "application/json; charset=utf-8",
+                      "url" : "/api/address/save",
+                      "success": function(data)
+                      {  
+                         $(okbtn).parent().parent().find('span.radio-add').text(data.address);
+                         $(okbtn).parent().parent().find("[name='optionsRadios']").val(data.id);
+                         $(okbtn).parent().hide().siblings().show();
+                         return;
+                      },"error": function(XMLHttpRequest, textStatus, errorThrown )
+                      {     
+                         alert(XMLHttpRequest.responseText);
+                         return;
+                       }
+                   });
+               
+
+        });
+        //取消修改
+         $("#address-list").on("click","button.glyphicon-remove",function(){
+         //$('button.glyphicon-remove').click(function(){
+           $(this).parent().hide().siblings().show();
+           // 如果没有ID
+           if(""==$(this).parent().parent().find("[name='optionsRadios']").val()){
+        	   $(this).parent().hide().siblings().hide();
+        	}
+        });
+
+
+         //删除地址
+         $("#address-list").on('click','span[name="span-remove"]',function(){
+            
+            addressid=$(this).parent().find('input').val();
+
+            var thisspan = $(this);
+
+             $.ajax(
+                  {
+                      "type": "get",
+                      //"dataType": "json",
+                      "contentType": "application/json; charset=utf-8",
+                      "url" : "/api/address/mydelete?id="+addressid,
+                      "success": function(data)
+                      {  
+                        $(thisspan).parent().parent().remove();
+                         return;
+                      },"error": function(XMLHttpRequest, textStatus, errorThrown )
+                      {     
+                         alert(XMLHttpRequest.responseText);
+                         return;
+                       }
+                   });
+          
+         });
+
+
+        //添加地址
+        $('span.glyphicon-plus').click(function(){
+          //$('#radio-plus').show();
+          //$('#radio-plus>label,#radio-plus>span').hide();
+          var length = $(".radio").length;
+          if(length>=5){
+        	  alert('配送地址最大允许5条');
+        	  return;
+          }
+          
+          var data={};
+          //套餐列表模板 内容追加
+          $('#template-address').tmpl(data).appendTo('#address-list');
+          $('#address-list label:last,#address-list span:last').hide();
+          $('#address-list div:last').show();
+
+        });
+
+//配送发货
+$('#send-to').click(function(){
+    var senddata=[];
+    var len=$('#tbody>tr').length;
+    var address=$('div.address-list input:checked').next().text();
+    if(!address){
+    	alert("请选择配送地址")
+    }
+    for(var i=0;i<len;i++){
+       var productid = $('#tbody').find('tr:eq('+i+')').find('[name="productid"]').text();
+       var name = $('#tbody').find('tr:eq('+i+')').find('[name="name"]').text();
+       var type = $('#tbody').find('tr:eq('+i+')').find('[name="type"]').text();
+       var stock = $('#tbody').find('tr:eq('+i+')').find('[name="stock"]').text();
+       var thisstock = $('#tbody').find('tr:eq('+i+')').find('[name="thisstock"]').val();
+       if(thisstock > stock){
+           alert("配送量超额");
+           return;
+       }
+       if(thisstock < 0){
+           alert("配送量不合法");
+           return;
+       }
+       
+       senddata[i] = {'userid':user.uid,'address':address,'productid':productid,'stock':thisstock};
+
+    }
+    $.ajax(
+     {
+         "type": "post",
+         //"dataType": "json",
+         "data": JSON.stringify(senddata),
+         "contentType": "application/json; charset=utf-8",
+         "url" : "/api/send/saves",
+         "success": function(data)
+         {  
+           alert("配送中"); 
+           var user =sessionStorage.getItem("userinfo");
+           user = JSON.parse(user);
+
+           var uid = user.uid;
+           buildStockList(uid)
+           return;
+         },"error": function(XMLHttpRequest, textStatus, errorThrown )
+         {     
+             alert(XMLHttpRequest.responseText);
+            return;
+          }
+      });
+
+});
+//重置
+$('#send-reset').click(function(){
+ var len=$('#tbody>tr').length;
+ for(var i=0;i<len;i++){
+	 $('#tbody').find('tr:eq('+i+')').find('[name="thisstock"]').val(0);
+ }
+});
+             
+//仓库列表
+function buildStockList(uid){
+    $('#tbody').html("");
+    //获取列表数据
+    $.ajax(
+     {
+         "type": "get",
+         //"dataType": "json",
+         //"data": JSON.stringify(senddata),
+         "contentType": "application/json; charset=utf-8",
+         "url" : "/api/stock/getbyuserid?uid="+uid,
+         "success": function(data)
+         {   
+           var len=data.length; 
+         //套餐列表模板 内容追加 table li 默认list
+           $('#template-stock').tmpl(data).appendTo('#tbody');
+         },"error": function(XMLHttpRequest, textStatus, errorThrown )
+         {     
+             alert(XMLHttpRequest.responseText);
+         }
+   }); 
+}
+// 地址列表
+function buildAddressList(uid){
+    $.ajax(
+            {
+                "type": "get",
+                //"dataType": "json",
+                // "data":,
+                "contentType": "application/json; charset=utf-8",
+                "url" : "/api/address/getbyuserid?uid="+uid,
+                "success": function(data)
+                {   
+                    if(data){
+                        $('#address-list').html("");
+                        for(var i = 0;i<data.length;i++){
+                            //套餐列表模板 内容追加
+                            $('#template-address').tmpl(data[i]).appendTo('#address-list');
+                        }
+                    }
+                
+                },"error": function(XMLHttpRequest, textStatus, errorThrown )
+                {     
+                    alert(XMLHttpRequest.responseText);
+                }
+          });
+
+}
+//个人信息模块
+$('#myname,#myemail').click(function(){
+  var value=$(this).prev().text();
+  $(this).parent().hide().next().show().find('input').prop('value',value);
+});
+$('#mypwd').click(function(){
+  $(this).parent().hide().next().show();
+});
+$('#user-info button.glyphicon-remove').click(function(){
+  $(this).parent().hide().prev().show();
+});
+
+
+var senddata=null;
+//
+$('#myname').parent().next().find('button.glyphicon-ok').click(function(){
+  if($(this).prev().val().length==0){
+    $(this).prev().prop('placeholder','不能为空');
+    return;
+  }
+  $(this).parent().hide().prev().show();
+  senddata={'uid':user.uid,'name':$(this).prev().val()};
+    $.ajax(
+              {
+                  "type": "post",
+                  //"dataType": "json",
+                  "data": JSON.stringify(senddata),
+                  "contentType": "application/json; charset=utf-8",
+                  "url" : " /api/user/updatemyname",
+                  "success": function(data)
+                  { 
+                    var user=JSON.parse(sessionStorage.getItem("userinfo"));
+                    user.name=senddata.name;
+                     sessionStorage.setItem("userinfo",JSON.stringify(user));
+                    $('#infor-name').text(user.name);
+                    
+           
+                     return;
+                  },"error": function(XMLHttpRequest, textStatus, errorThrown )
+                  {     
+                      alert(XMLHttpRequest.responseText);
+                      return;
+                   }
+               });
+    
+});
+//
+$('#myemail').parent().next().find('button.glyphicon-ok').click(function(){
+   if($(this).prev().val().length==0){
+    $(this).prev().prop('placeholder','不能为空');
+    return;
+  }
+  senddata={'uid':user.uid,'email':$(this).prev().val()};
+  $(this).parent().hide().prev().show();
+    $.ajax(
+              {
+                  "type": "post",
+                  //"dataType": "json",
+                  "data": JSON.stringify(senddata),
+                  "contentType": "application/json; charset=utf-8",
+                  "url" : " /api/user/updatemyemail",
+                  "success": function(data)
+                  {  
+                     var user=JSON.parse(sessionStorage.getItem("userinfo"));
+                    user.email=senddata.email;
+                     sessionStorage.setItem("userinfo",JSON.stringify(user));
+                    $('#infor-email').text(user.email);
+                     return;
+                  },"error": function(XMLHttpRequest, textStatus, errorThrown )
+                  {     
+                      alert(XMLHttpRequest.responseText);
+                      return;
+                   }
+               });
+  
+});
+//
+$('#mypwd').parent().next().find('button.glyphicon-ok').click(function(){
+        var pwd=$(this).parent().find('input:eq(0)').val();
+       var pwd1=$(this).parent().find('input:eq(1)').val();
+       var pwd2=$(this).parent().find('input:eq(2)').val();
+       if(pwd1!=pwd2 || pwd==null){
+            //$(this).parent().find('input').prop('placeholder','密码有误，请重新输入');
+            alert('两次密码不一致，请重新输入');
+            return;
+         }
+         $(this).parent().hide().prev().show();
+           var senddata={ "uid":user.uid, "password": pwd, "password2":pwd2}
+            $.ajax(
+              {
+                  "type": "post",
+                  //"dataType": "json",
+                  "data": JSON.stringify(senddata),
+                  "contentType": "application/json; charset=utf-8",
+                  "url" : "/api/user/updatemypwd",
+                  "success": function(data)
+                  {     
+                   
+                	 return;
+                  },"error": function(XMLHttpRequest, textStatus, errorThrown )
+                  {     
+                      alert(XMLHttpRequest.responseText);
+                      return;
+                   }
+               });  
+
+});
+
+    </script>
+</body>
+</html>

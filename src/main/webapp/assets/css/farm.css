@@ -1,0 +1,114 @@
+
+/* ===========================================================
+   GENERAL STYLESHEET BY BYINARY THEME    
+   ============================================================*/
+
+
+body {
+    background:url(../img/farm/farmbig-bg.jpg) no-repeat;
+    background-position:center;
+    background-size:auto 100%;
+}
+
+
+h5 {
+    padding-bottom: 30px;
+}
+h4{
+    margin-top: 4px;
+}
+.text-center {
+    text-align: center;
+}
+
+
+
+.main-low-margin {
+    margin-top: 55px;
+}
+
+section.content p{line-height:20px;}
+/*=======================================================*/
+/**/
+.ml{margin-left:1%;}
+.st-l button{width:30%;}
+#btn-water,#btn-feed,#btn-bug,#btn-land{box-shadow:1px 1px 5px #999;}
+#grow-s{font-weight:700;color:#777;white-space:nowrap;padding-left:6px;padding-right:20px;}
+div.farm_bg{
+     background:url(../img/farm/free.jpg) no-repeat;
+    background-position:center;
+    background-size:100% auto;
+    position:relative;
+    height:550px;
+    margin-bottom:140px;
+    border:10px solid #F0C991;
+    -webkit-box-shadow:3px 3px 10px #999;
+    -moz-box-shadow:3px 3px 10px #999;
+    box-shadow:3px 3px 10px #999;
+}
+/*种植的植物背景图片*/
+.plant{width:80px;height:80px;position:absolute;}
+div.plant img{max-width:180px;position:absolute;left:-40%;bottom:10%;}
+div.plant:nth-child(1){left:12%;top:46%;
+}
+div.plant:nth-child(2){left:20%;top:39%;
+}
+div.plant:nth-child(3){left:29%;top:31%;
+}
+div.plant:nth-child(4){left:20%;top:54%;
+}
+div.plant:nth-child(5){left:29%;top:45%;
+}
+div.plant:nth-child(6){left:38%;top:38%;
+}
+div.plant:nth-child(7){left:30%;top:63%;
+}
+div.plant:nth-child(8){left:39%;top:55%;
+}
+div.plant:nth-child(9){left:48%;top:47%;
+}
+/*水壶和浇水*/
+.pen-bug img{position:absolute;left:70%;top:-35%;display:none;}
+.shi-feed img{width:50%;height:auto; position:absolute;left:15%;top:-35%;display:none;}
+.water-hu img{width:20%;height:auto; position:absolute;left:55%;top:-30%;display:none;}
+/*屏幕小于750px=============================================================*/
+@media screen and (max-width: 680px){
+div.plant{background-size:50% 50%;}
+ .btn-wlfb button,.fm-r button{display:inline-block;width:auto;}
+ .water-hu img{width:40%;height:auto;}
+ div.farm_bg{max-height:350px;margin-top:20px; background-size:100% 100%;}
+ .plant{width:40px;height:40px; background-size:30% 30%;}
+ div.plant img{width:90px;}
+ .text-right{padding-left:5px;}
+}
+@media screen and (max-width: 768px) {
+    div.farm_bg{height:300px;border:1px solid #F0C991;}
+    marquee{margin-top:10px;}
+}
+/*屏幕大于750px小于1100px=============================================================*/
+@media screen and (min-width:750px) and (max-width:1100px) {
+     div.farm_bg{height:450px;margin-top:20px; background-size:100% 100%;}
+}
+div.footer{ background:#475025;color:#dcdcdc;padding-top:10px;padding-bottom:5px;width:100%;}
+.modal{top:20%;}
+#select-farm .form-control{
+    color: #555;
+    background-color:rgba(203,196,160,0.6);
+    width:135px;
+    cursor:pointer;
+}
+
+div.change-col .col-xs-8,div.change-col .col-xs-4{padding-left:0;padding-right:10px;}
+div.pro-size .col-xs-3,div.pro-size .col-xs-6{padding-left:2px}
+div.change-col>div.col-xs-3{padding-left:0px;padding-right:0;}
+div.change-col{margin-bottom:20px;}
+div.pro-size span.text-center{line-height:34px}
+div.pro-size div.progress{margin-top:6px;}
+div.status-nav{margin-top:20px;}
+
+@media screen and (max-width: 319px) {
+   #btn-harvest{margin-top:10px}
+}
+@media screen and (max-width:320px) {
+    #grow-s{padding-right:19px}
+}

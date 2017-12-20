@@ -1,0 +1,21 @@
+ div.thumbnail p{font-weight:500;line-height: 30px;
+
+    }
+ div.thumbnail img{width:100%;}
+
+ #num input, #num span, #num button{display:inline-block;}
+ footer{ background:#475025;color:#dcdcdc;padding-top:10px;padding-bottom:5px;margin-top:20px;}
+ .modal{top:20%;}
+ div.thumbnail{min-height:500px;}
+ p.overf{height:90px;overflow:hidden;}	
+ @media screen and (max-width:767px){
+ 	div.thumbnail{min-height:0;}
+ 	p.overf{height:auto;}	
+ 	div.col-md-4,div.col-sm-6{padding-left: 5px;padding-right:5px;}
+ }
+ .padl{padding-left: 0;padding-right: 0;}
+ div.tips{display:none;position:absolute;width:90%;left:5%;top:30%;background-color:rgba(10,10,10,0.5);padding:5px;border-radius:5px;z-index:100;color:#fff;}
+
+ @media screen and (min-width:768px){
+ 	 #product-list img{cursor:pointer;max-height:245px;}
+ }

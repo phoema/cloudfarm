@@ -1,0 +1,366 @@
+body{
+    font-size: 13px;
+}
+.selType
+{
+    width: 140px;
+    background-color:  #3498DB;;
+}
+.height30
+{
+    height: 30px;
+    line-height: 30px;
+}
+.buttonRight
+{
+    width: 60px;
+    height: 24px;
+}
+.imgSelect {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid rgb(52,152,219); border-spacing: 0px; border-radius: 0px; border-collapse: separate;
+}
+.addProject
+{
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #d3d3d3;
+    background-color: #F5F6F6;
+}
+.addProject:hover
+{
+  border: 1px solid #1484e6;
+}
+.w95{
+    width: 95px;
+}
+.w80
+{
+    width: 80px;
+}
+.tableList
+{
+    border-collapse: collapse;
+}
+.tableList th
+{
+    height: 40px;
+    text-align: left;
+    background-color: #f6f8f8;
+    border-right:1px solid #e9ebeb;
+}
+.tableList td
+{
+    height: 64px;
+}
+.tableList div
+{
+    height: 32px;
+    line-height: 32px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.surfaceImg
+{
+    width: 130px;
+    height: 130px;
+}
+.title
+{
+   font-family: "SimSun";
+   font-size: 14px;
+   font-weight: bold;
+   /*color: dodgerblue;*/
+   color: #3498DB;
+   max-width: 85%;
+   line-height: 25px;
+}
+.marginleft
+{
+    margin-left: 12px;
+    margin-top: 5px;
+}
+.dhsl1 {
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.shuoming
+{
+    font-family:"Microsoft Yahei";
+    font-size: 12px;
+    color: #3B3B3B ;
+    font-weight: bold;
+}
+.shuoming1
+{
+    margin-left: 30%;
+}
+.neirong
+{
+  letter-spacing: 1px;
+}
+.text
+{
+    line-height: 20px;
+}
+.blue
+{
+    /*color: dodgerblue;*/
+    color: #3498DB;
+}
+.toolbar li
+{
+ float: left;
+}
+
+.joinitem
+{
+    background: url("../../img/patent/searOverview/ic1_2.png");
+    width: 14px;
+    height: 13px;
+}
+.joinitem:hover
+{
+    background: url("../../img/patent/searOverview/ic1_2.png");
+    width: 14px;
+    height: 13px;
+}
+.pdf
+{
+    background: url("../../img/patent/searOverview/ic2_2.png");
+    width: 13px;
+    height: 14px;
+}
+
+.pdf1{
+	background: url("../../img/patent/searOverview/ic2_2.png");
+    width: 13px;
+    height: 14px;
+}
+
+.pdf0{
+	background: url("../../img/patent/searOverview/ic2_1.png");
+    width: 13px;
+    height: 14px;
+}
+.pdf:hover
+{
+    background: url("../../img/patent/searOverview/ic2_2.png");
+    width: 13px;
+    height: 14px;
+}
+.legalState
+{
+    background: url("../../img/patent/searOverview/ic3_2.png");
+    width: 13px;
+    height: 14px;
+}
+.legalState:hover
+{
+    background: url("../../img/patent/searOverview/ic3_2.png");
+    width: 13px;
+    height: 14px;
+}
+.unkown
+{
+    background: url("../../img/patent/searOverview/ic4_2.png");
+    width: 14px;
+    height: 13px;
+}
+.unkown:hover
+{
+    background: url("../../img/patent/searOverview/ic4_2.png");
+    width: 14px;
+    height: 13px;
+}
+.warning
+{
+    background: url("../../img/patent/searOverview/ic5_2.png");
+    width: 14px;
+    height: 15px;
+}
+.warning:hover
+{
+    background: url("../../img/patent/searOverview/ic5_2.png");
+    width: 14px;
+    height: 15px;
+}
+
+.imgTextSelect
+ {
+     background: url("../../img/patent/searOverview/btn1_2.png");
+ }
+.homeBRUlNormal
+{
+    background: url("../../img/public/dotWhite.png") no-repeat;
+}
+.homeBRUlSelect
+{
+    background: url("../../img/public/dotGray.png") no-repeat;
+}
+.homeBRUl li
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+/* 多行出现省略号 */
+.dhsl {
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.displaynnnn
+{
+    display: none;
+}
+.secondDiv:hover
+{
+   
+}
+.legalStatusTdWidth
+{
+    width: 180px;
+}
+.triangleDown
+{
+    background: url("../../img/patent/table/arrowBlueDown.png") no-repeat center;
+    width: 24px ;
+    height: 12px ;
+}
+.triangleUp
+{
+    background: url("../../img/patent/table/arrowBlueuP.png") no-repeat center;
+    width: 24px ;
+    height: 12px ;
+}
+
+.selectDownloadBorderBottom
+{
+    border-bottom: 1px solid rgb(207,207,207)
+}
+.height271
+{
+    height: 271px;
+}
+.height431
+{
+    height: 430px;
+}
+.height590
+{
+    height: 590px;
+}
+.downloadSecondTitle
+{
+    font-size: 14px;
+    font-family: "SimSun";
+    font-weight: bold;
+}
+.selectTable td
+{
+  background: rgb(243,243,243);
+  border-bottom: 1px solid rgb(228,228,228);
+    line-height: 30px;
+}
+
+.selectTable span
+{
+    margin-left: 5px;
+}
+.goldDiv
+{
+    right:-80px;
+    top:-20px;
+    width: 60px;
+    height: 50px;
+}
+.gold90 {
+    background: url("../../img/patent/searOverview/gold90.png") no-repeat scroll 0% 0% transparent; padding: 30px 0px 0px 10px; font-weight: bold; color:#FFFFFF;
+}
+
+.gold60 {
+    background: url("../../img/patent/searOverview/gold60.png") no-repeat scroll 0% 0% transparent; font-weight: bold; color:#FFFFFF;
+}
+
+.gold20 {
+    background: url("../../img/patent/searOverview/gold20.png") no-repeat scroll 0% 0% transparent; font-weight: bold; color:#FFFFFF;
+}
+
+/*放大缩小图片*/
+.smallBigBox{
+    position:relative;
+    width:214px;
+}
+/*.smallBigBox .small{*/
+    /*position:relative;*/
+    /*text-align:center;*/
+    /*background:#FFF;*/
+/*}*/
+
+.smallBigBox .small .mark{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    width:80px;
+    height:80px;
+    background:#FFFFFF;
+    filter:alpha(opacity:50);
+    opacity:0.5;
+    border:1px solid #333;
+    display:none;
+}
+
+.smallBigBox .big{
+    position:absolute;
+    /*left:-325px;*/
+    /*top:-10px;*/
+    display:none;
+}
+
+.boxBig{
+    position:absolute; border: 1px #CCCCCC solid; background-color:#FFFFFF;
+    left:-370px;
+    top:-50px;
+    width:350px;
+    height:350px;
+    overflow:hidden; display: none; z-index: 3;
+}
+.title a { color:#282828;  }
+.title a:hover { color:#3498DB;  }
+.imgContentLighHight { line-height: 18px; }
+.im1 { border: 1px solid #CCCCCC; padding:2px;}
+
+.abstractDiv {
+width: 640px;
+word-break:break-all; 
+word-wrap:break-word;}
+
+.abstractEnglishDiv {
+width: 875px;
+word-break:break-all; 
+word-wrap:break-word;}
+
+.IPCQLink,.PRNOLink {
+word-break:break-all; 
+word-wrap:break-word;}
+.lssc1{
+	background-color: rgb(10,206,33);
+}
+.lssc2{
+	background-color: rgb(250,23,80);
+}
+.lssc3{
+	background-color: rgb(250, 194, 19);
+}
+

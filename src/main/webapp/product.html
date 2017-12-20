@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- HEAD SECTION -->
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>云田科技</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link rel="stylesheet" href="./assets/bootstrap-3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/main-style.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!--END HEAD SECTION -->
+<body>
+    <!-- NAV SECTION -->
+   <div class="navbar navbar-default container-fluid">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/img/logo.png" alt="" style="height:40px;width:auto;margin-top:-10px">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right" id="nav-li">
+                    <li ><a href="index.html">主页</a></li>
+                    <li><a href="farm.html">云田农场</a></li>
+                    <li class="active"><a href="#">云田商城</a></li>
+                    <li><a href="charity.html">云田公益</a></li>
+                    <li><a href="space.html">云创空间</a></li>
+                   <li style="display:none" id="per-information"><a href="user.html">个人信息</a></li>
+                    <li id="btn-logout" style="display:none"><a href="#">退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--END NAV SECTION -->
+    <div class="container" style="min-height:800px">
+        <div class="row" id="product-list">
+            
+        </div>
+    </div>
+              <!--  -->
+        <div class="modal fade" id="mymodal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">提示信息</h4>
+              </div>
+              <div class="modal-body">
+                <input name="id" type="hidden"/>
+                <input name="number" type="hidden"/>
+                <p>您将要支付：<span class="pay-score" style="color:red"></span>积分</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" class="sure-pay" onclick="payclick()">确定</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    <!--END FOOTER SECTION -->  
+   <footer  style="display:none">
+       <div class="container">
+           <p class="text-center">
+                <span>Copyright &copy; 2016.Cloudfarm Technology All rights reserved.</span>
+            </p>
+       </div>
+   </footer>
+    <!-- CORE JQUERY LIBRARY -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/cloudfarm.js"></script>
+    <script src="./assets/jquery-tmpl/jquery.tmpl.js"></script>
+    <script type="text/x-jquery-tmpl" id="template-product">
+        <div class="col-md-4 col-sm-6">
+            <div class="thumbnail" style="position:relative">
+                <img src="${url}" alt="..." class="img-rounded" title="">
+                <div class="tips">${note}</div>
+                <h4 name="name">${name}</h4>
+                <p>品种：${type}</p>
+                <input name="id" type="hidden" value=${id} />
+                <input name="type" type="hidden"/>
+                <p style="text-indent:2em;" class="overf">${note}</p>
+                <div class="row" style="margin-left:0;margin-right:0">
+                    <div class="col-xs-6">
+                        <p class="p-score">单价：<span name="score" style="color:red">${score}</span>积分/kg</p> 
+                    </div>
+                    <div class="col-xs-3">
+                        <input name="number" min="1" step="1" value="1" type="number" class="form-control" placeholder="数量">
+                    </div>
+                    <div class="col-xs-3 padl">
+                        <button name="btn-pay" class="btn btn-primary btn-md" type="button"  dataid="${id}">兑换</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     </script>
+    <script>
+        $(function(){
+              buildProductList();
+             function buildProductList(){
+              $.ajax(
+                      {
+                          "type": "get",
+                          //"dataType": "json",
+                          // "data":,
+                          "contentType": "application/json; charset=utf-8",
+                          "url" : "../api/product/list",
+                          "success": function(data)
+                          {   
+                              if(data){
+                                  for(var i = 0;i<data.length;i++){
+                                      //套餐列表模板 内容追加
+                                      $('#template-product').tmpl(data[i]).appendTo('#product-list');
+                                  }
+                              }
+                          
+                          },"error": function(XMLHttpRequest, textStatus, errorThrown )
+                          {     
+                              alert("Data Loaded: " + XMLHttpRequest.responseText);
+                          }
+                    });
+
+          }
+          $('footer').show();
+        });
+      //支付
+        function payclick(){
+           var productid = $('#mymodal').find("[name='id']").val();
+           var number = $('#mymodal').find("[name='number']").val();
+
+           //String[] parm[productid,count]
+           var senddata={"parm":[productid,number]};
+           $.ajax(
+                   {
+                       "type": "post",
+                       //"dataType": "json",
+                       "data":JSON.stringify(senddata),
+                       "contentType": "application/json; charset=utf-8",
+                       "url" : "../api/score/productbuy",
+                       "success": function(data)
+                       {   
+                           $('div.modal').modal('hide');
+                           alert("兑换成功");
+                    
+                       },"error": function(XMLHttpRequest, textStatus, errorThrown )
+                       {     
+                           alert(XMLHttpRequest.responseText);
+                       }
+                 });
+        }
+
+$("#product-list").on("click",".btn-primary",function(){
+	var thisbtn = $(this);
+	var thumbnail = $(this).parent().parent().parent();
+    var id = $(thumbnail).find('[name="id"]').val();
+    var number = $(thumbnail).find('[name="number"]').val();
+    var score = $(thumbnail).find('[name="score"]').html();
+    var name = $(thumbnail).find('[name="name"]').html();
+    $('#mymodal').find(".pay-score").html(score*number);
+    $('#mymodal').find("[name='id']").val(id);
+    $('#mymodal').find("[name='number']").val(number);
+	//var value = $(thisbtn).parent().prev().val();
+	//alert(number);
+	$('#mymodal').modal('show');
+	
+});
+
+//tips显示隐藏
+  $("#product-list").on('mouseenter','div.thumbnail>img,div.tips',function(event){
+  
+      $(this).next().show();
+        return;  
+  });
+
+  $("#product-list").on('mouseleave','div.thumbnail',function(event){
+   
+        $(this).find('div.tips').hide();
+        return;
+  });
+    </script>
+
+</body>
+</html>

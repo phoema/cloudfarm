@@ -1,0 +1,159 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>用户注册</title>
+  <meta name="description" content="用户注册">
+  <meta name="keywords" content="form">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-title" content="用户注册" />
+  <!--<link rel="stylesheet" href="css/amazeui.min.css"/>-->
+  <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.5.2/css/amazeui.min.css"/>
+  <script type="text/javascript" src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+  
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+<header class="am-topbar admin-header">
+  <!-- content start -->
+  <div class="admin-content">
+    <div class="am-cf am-padding">
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">用户注册</strong> / <small style="color:#dd514c">请正确填写您的个人信息</small></div>
+    </div>
+
+    <hr/>
+
+    <div class="am-g">
+
+      <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
+        <div class="am-panel am-panel-default">
+          <div class="am-panel-bd">
+            <div class="user-info">
+              <p><strong>说明</strong></p>
+              <div >
+             您的个人信息仅做为云田系统的账号注册使用。<br>
+             云田介绍<br>
+             
+             客服电话：<br>
+             客服邮箱：<br><br>
+             云田介绍科技
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
+        <form class="am-form am-form-horizontal">
+          <div class="am-form-group">
+            <label for="user-id" class="am-u-sm-3 am-form-label"><font style="color:#f00">*&nbsp;</font>用户名</label>
+            <div class="am-u-sm-9">
+              <input type="text" id="user-id" maxlength="16" placeholder="非汉字，在未被提前申请的情况下，做为您的DI系统登录名称">
+            </div>
+          </div>
+
+          <div class="am-form-group">
+            <label for="user-name" class="am-u-sm-3 am-form-label"><font style="color:#f00">*&nbsp;</font>昵称</label>
+            <div class="am-u-sm-9">
+              <input type="text" maxlength="50" id="user-name" placeholder="输入您的真实姓名">
+            </div>
+          </div>
+
+          <div class="am-form-group">
+            <label for="user-sex" class="am-u-sm-3 am-form-label">性别</label>
+            <div class="am-u-sm-9">
+            <select id="user-sex" data-am-selected="{btnSize: 'sm'}">
+              <option value="男">男</option>
+              <option value="女">女</option>
+            </select>
+            </div>
+          </div>
+
+          <div class="am-form-group">
+            <label for="user-mail" class="am-u-sm-3 am-form-label"><font style="color:#f00">*&nbsp;</font>邮箱</label>
+            <div class="am-u-sm-9">
+              <input type="text" maxlength="64" id="user-mail" placeholder="输入您的电子邮件">
+            </div>
+          </div>
+
+          <div class="am-form-group">
+            <label for="user-phone" class="am-u-sm-3 am-form-label">手机</label>
+            <div class="am-u-sm-9">
+              <input type="text" maxlength="64" id="user-phone" placeholder="输入您的电话号码">
+            </div>
+          </div>
+
+          <div class="am-form-group">
+            <label for="user-note" class="am-u-sm-3 am-form-label">备注</label>
+            <div class="am-u-sm-9">
+              <textarea maxlength="255" class="" rows="5" id="user-note" placeholder="输入其他信息"></textarea>
+              <small>250字以内</small>
+            </div>
+          </div>
+
+          <div class="am-form-group">
+            <div class="am-u-sm-9 am-u-sm-push-3">
+              <button id="btnacount" type="button" class="am-btn am-btn-primary">提交申请</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- content end -->
+
+<footer>
+  <hr>
+  <p class="am-padding-left"></p>
+</footer>
+
+</body>
+<script>
+
+  $("#btnacount").click(function(){
+  // 验证
+  var userid = $("#user-id").val();
+  var name = $("#user-name").val();
+  var sex = $("#user-sex").val();
+  var company = $("#user-company").val();
+  var mail = $("#user-mail").val();
+  var phone = $("#user-phone").val();
+  var tel = $("#user-tel").val();
+  var note = $("#user-note").val();
+  
+	  if(userid==""){
+	      alert("请输入登录名");
+	      return;
+	  }
+	  if(name==""){
+	      alert("请输入昵称");
+	      return;
+	  }
+	  if(mail==""){
+	      alert("请输入邮箱");
+	      return;
+	  }
+     //验证邮件
+    if( mail=="" || ( mail!="" && !/.+@.+\.[a-zA-Z]{2,4}$/.test(mail) ) ){
+      alert("请输入正确的邮箱"); 
+      return;
+    }
+
+	  var url = "trial/mail?userid="+encodeURI(encodeURI(userid)) + "&name="+encodeURI(encodeURI(name)) + "&sex="+encodeURI(encodeURI(sex))+ "&company="+encodeURI(encodeURI(company)) + "&mail="+mail + "&phone="+ phone+ "&tel="+ tel + "&note="+ encodeURI(encodeURI(note));
+	  
+      $.get(url, function(json){
+          //$('#pubdayinfo').html(JSON.stringify(json,null,4));
+            alert(json);
+            //$("#btnacount").attr("disabled",true);
+     });
+ });
+</script>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- HEAD SECTION -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>云田资讯</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link rel="stylesheet" href="./assets/bootstrap-3.3.7/css/bootstrap.min.css">
+    <!--SLIDER CSS CLASES -->
+    <!--CUSTOM STYLE -->
+    <link rel="stylesheet" href="./assets/css/main-style.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <style>
+       
+        footer{background:#475025;color:#dcdcdc;padding-top:10px;padding-bottom:5px;margin-top:20px;}
+        h3{margin-bottom:30px;color:#666;}
+        p.text-right{color:#777;}
+        hr{border:3px solid rgba(60, 118, 61,0.7);}
+         html, body {
+        height: 100%;
+        }
+        .fontms{font-family: 'Microsoft YaHei';font-size:16px;}
+        .minheight{min-height:100%;position:relative;}
+        footer{position:absolute;left:0;bottom:0;right:0;}
+    </style>
+</head>
+<!--END HEAD SECTION -->
+<body>
+    <!-- NAV SECTION -->
+    <div class="navbar navbar-default container-fluid">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt="" style="height:40px;width:auto;margin-top:-10px"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right" id="nav-li">
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="farm.html">云田农场</a></li>
+                    <li><a href="product.html">云田商城</a></li>
+                    <li><a href="charity.html">云田公益</a></li>
+                    <li><a href="space.html">云创空间</a></li>
+                    <li style="display:none" id="per-information"><a href="user.html" class="active">个人信息</a></li>
+                    <li id="btn-logout" style="display:none"><a href="#">退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="minheight">
+        <div class="container">
+            <h3 id="title" class="text-center">题目</h3>
+            <p class="text-right">时间：<span id="createtime" style="padding-right:30px;"></span>浏览量：<span id="num">12</span></p>
+            <hr>
+            <div id="detail"></div>
+            <p class="text-right"><a href="gallery.html" id="c_href">《《《&nbsp&nbsp返回文章列表</a></p> 
+        </div>
+        <div style="height:50px"></div>
+        <footer>
+         <p class="text-center">
+           Copyright &copy; 2016.Cloudfarm Technology All rights reserved.
+         </p>
+       </footer>
+    </section>
+  
+     
+    <!--  -->
+    <script src="./assets/js/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+    <script src="./assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="../assets/js/cloudfarm.js"></script>
+    <script>
+        $(function(){
+            var a=document.location.href;
+            var id=a.split('=')[1];
+             $.ajax(
+              {
+                  "type": "get",
+                  //"dataType": "json",
+                  "contentType": "application/json; charset=utf-8",
+                  "url" : " /api/article/get?id="+id,
+                  "success": function(data)
+                  {  
+                    $('#title').text(data.title);
+                    $('#detail').html(data.detail);
+                    $('#createtime').text(data.createtime);
+                    $('#num').text(data.browser);
+                    
+                     return;
+                  },"error": function(XMLHttpRequest, textStatus, errorThrown )
+                  {     
+                      alert(XMLHttpRequest.responseText);
+                      return;
+                   }
+               });
+        });
+        $('#c_href').click(function(){
+           window.history.go(-1);
+        });
+
+    </script>
+</body>
+</html>

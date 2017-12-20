@@ -1,0 +1,979 @@
+{
+  "data": [
+    {
+        "id": 1,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "SEED",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "播种期"
+    },
+    {
+        "id": 2,
+        "name": "我的农田1",
+        "pkageid": 2,
+        "pkage": {
+            "id": 2,
+            "name": "套餐2",
+            "price": 1,
+            "cycleday": 50,
+            "pkage_Product": [
+                {
+                    "id": 3,
+                    "price_cost": 0,
+                    "min": 30,
+                    "max": 300,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 4,
+                    "price_cost": 0,
+                    "min": 40,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 3,
+                        "name": "辣椒3号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 30,
+                        "max": 300,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "CLOSED",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "已关闭"
+    },
+    {
+        "id": 3,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "GROW",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": "2016-08-29 07:46:21",
+        "state_cn": "生长期"
+    },
+    {
+        "id": 4,
+        "name": "我的农田1",
+        "pkageid": 2,
+        "pkage": {
+            "id": 2,
+            "name": "套餐2",
+            "price": 1,
+            "cycleday": 50,
+            "pkage_Product": [
+                {
+                    "id": 3,
+                    "price_cost": 0,
+                    "min": 30,
+                    "max": 300,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 4,
+                    "price_cost": 0,
+                    "min": 40,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 3,
+                        "name": "辣椒3号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 30,
+                        "max": 300,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "FRUIT",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "结果期"
+    },
+    {
+        "id": 5,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "HARVEST",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "收获期"
+    },
+    {
+        "id": 6,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "CLOSED",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "已关闭"
+    },
+    {
+        "id": 7,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "HARVEST",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "收获期"
+    },
+    {
+        "id": 8,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "BUD",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "萌芽期"
+    },
+    {
+        "id": 9,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "BUD",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "萌芽期"
+    },
+    {
+        "id": 10,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "BUD",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": "2016-08-29 07:46:25",
+        "state_cn": "萌芽期"
+    },
+    {
+        "id": 11,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "BUD",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "萌芽期"
+    },
+    {
+        "id": 12,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "BUD",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "萌芽期"
+    },
+    {
+        "id": 13,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "BUD",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "萌芽期"
+    },
+    {
+        "id": 14,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "BUD",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "萌芽期"
+    },
+    {
+        "id": 15,
+        "name": "我的农田1",
+        "pkageid": 1,
+        "pkage": {
+            "id": 1,
+            "name": "套餐1",
+            "price": 0,
+            "cycleday": 30,
+            "pkage_Product": [
+                {
+                    "id": 1,
+                    "price_cost": 0,
+                    "min": 10,
+                    "max": 100,
+                    "real": 0,
+                    "product": {
+                        "id": 1,
+                        "name": "黄瓜1号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 10,
+                        "max": 100,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                },
+                {
+                    "id": 2,
+                    "price_cost": 0,
+                    "min": 20,
+                    "max": 200,
+                    "real": 0,
+                    "product": {
+                        "id": 2,
+                        "name": "香蕉2号",
+                        "note": "note",
+                        "price": 10,
+                        "score": 20,
+                        "min": 20,
+                        "max": 200,
+                        "real": 0,
+                        "url": null,
+                        "createtime": null,
+                        "updatetime": null
+                    }
+                }
+            ],
+            "createtime": null,
+            "updatetime": null
+        },
+        "userid": 1,
+        "username": "admin",
+        "shirundu": 30,
+        "feiwodu": 10,
+        "haichongdu": 20,
+        "zacaodu": 40,
+        "state": "BUD",
+        "createtime": "2016-08-24 01:18:12",
+        "updatetime": null,
+        "state_cn": "萌芽期"
+    }
+]
+}

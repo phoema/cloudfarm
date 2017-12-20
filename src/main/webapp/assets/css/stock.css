@@ -1,0 +1,20 @@
+
+/*=======================================================*/
+.infor .header{margin-bottom:20px;}
+.infor .infor-con .glyphicon:hover{cursor:pointer;}
+.infor .infor-con li{margin-top:10px;}
+h3{color:#777;margin-bottom:20px;}
+/**/
+body{position:relative;height:100%;}
+footer{ background:#475025;color:#dcdcdc;padding-top:10px;padding-bottom:5px;margin-top:20px;position:absolute;left:0;right:0;bottom:0;}
+
+.table{width:100%;}
+.text-bg{background:#dedede;padding:5px 7px;border-radius:5px;}
+.radio{margin-left:2%}
+span.glyphicon-pencil,span.glyphicon-plus,div.radio>span.glyphicon-remove{cursor:pointer;}
+span.glyphicon-plus{margin-left:2%;}
+#user-info input{margin-top:1%;margin-bottom:1%;}
+#note{overflow:auto;}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	input.leftpadding{margin-left:45px;}
+}
